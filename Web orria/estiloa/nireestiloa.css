@@ -1,494 +1,193 @@
-/* WEB-ORRI GUZTIAREN ATSEALDEAN */
-html,
-body {
-    background-color: #f9f4f1;
+/* --- ALDAGAIAK ETA OINARRIZKO KONFIGURAZIOA --- */
+:root {
+    --granatea: #871521;
+    --hondoa: #f9f4f1;
+    --arrosa-argia: #fce4e6; 
+    --txuria: #ffffff;
+    --pill-erradioa: 50px;
+    --edukiontzi-erradioa: 30px;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-
+    font-family: 'Arial', sans-serif;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-main {
+body {
+    background-color: var(--hondoa);
+    color: var(--granatea);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    /* Ukipen-pantailetarako korritze leuna */
+    -webkit-overflow-scrolling: touch;
 }
 
-/* HEADER-REN DAUDEN GAUZAK */
-
-header {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+/* Irudi guztiak pantailara egokitzeko (Responsive images) */
+img {
     max-width: 100%;
-    align-self: center;
+    height: auto;
+}
+
+/* --- GOIBURUA (Header) --- */
+header {
+    background-color: var(--granatea); /* Goiburua granatea */
+    text-align: center;
+    padding: 20px 10px 10px 10px; 
 }
 
 .logoa {
-    margin-top: 20px;
-    width: 200px;
+    width: 100%;
+    max-width: 140px;
+    cursor: pointer;
 }
 
-
+/* Nabigazio menua */
 nav {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    max-width: min-content;
-    background-color: #871521;
-    border-radius: 5px;
-    padding: 0 30px;
-    font-weight: bolder;
-
+    gap: 10px;
+    padding: 20px 0;
+    flex-wrap: wrap; 
 }
 
-@media (min-width: 800px) {}
-
-nav .menuBotoia {
-    color: #f9f4f1;
-    padding: 3px 40px;
-    transform: scale(1);
-    transition: all 0.2s ease;
-    display: inline-block;
+.menuBotoia a {
     text-decoration: none;
-
+    color: var(--txuria);
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: var(--pill-erradioa);
 }
 
-nav .menuBotoia:hover a {
-    color: #871521;
+.menuBotoia a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: var(--txuria);
 }
 
-nav .menuBotoia:hover {
-    background-color: #f9f4f1;
-    color: #871521;
-    transform: scale(1.10);
+/* --- EDUKI NAGUSIA (Main) --- */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
-
-/* HASIERAN DAUDEN GAUZAK */
-.hasiera,
-.gaurkoBerriak {
-    align-self: center;
-    margin: 15px
-}
-
 
 .hasierakoTitulua {
-    color: #871521;
-    text-align: center;
+    font-size: clamp(2rem, 5vw, 2.8rem);
     font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--granatea);
+    /* Izenburua ezkerraldean mantentzen da beti */
+    text-align: left; 
 }
 
+/* Edukiontzi nagusia (Nortzuk gara) - Flexbox KENDU eta FLOAT jarri da testuak irudia inguratzeko */
 .hasieraArtikulo {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    width: fit-content;
-    max-width: 90%;
-    margin: 20px auto;
+    background-color: var(--txuria); 
+    border: 2px solid var(--arrosa-argia);
+    border-radius: var(--edukiontzi-erradioa);
+    padding: clamp(20px, 5vw, 40px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    /* display: block jarrita dago berez, eta hau behar du edukiontziak irudia ondo barneratzeko: */
+    overflow: auto; 
 }
 
-.hasieraArtikulo>div:last-child {
+.hasieraArtikulo img {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    max-width: 250px;
+    /* Irudia ezkerrera "flotatu" egiten da, testuak inguratu dezan */
+    float: left;
+    margin-right: 30px; /* Tartea irudiaren eskuinaldean */
+    margin-bottom: 15px; /* Tartea irudiaren azpian */
 }
 
-.partidarikOnena {
-    flex: 1;
-    margin: 10px;
-    border: solid 2px #871521;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: fit-content;
-    align-self: center;
-    padding-bottom: 40px;
+.hasieraArtikulo p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: justify; /* Testua justifikatuta formara ondo egokitzeko */
 }
 
-.partidarikOnenaEmaitza {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #871521;
-    gap: 15px;
-    margin: 10px 0;
-    width: fit-content;
-}
-
-.partidarikOnenaEmaitza p {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin: 0;
-    line-height: 1;
-    white-space: nowrap;
-}
-
-.partidarikOnenaEmaitza a {
-    margin: 15px;
-}
-
-.partidarikOnenaEskutuak {
-    width: 80px;
-    height: auto;
-    object-fit: contain;
-}
-
-.partidarikOnenaUbi {
-    text-decoration: none;
-    color: #871521;
-    font-weight: bold;
-}
-
-.partidarikOnenaBideoa {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-}
-
-.gaurkoBerriak {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.gaurkoBerriakBakoitza {
-    color: #871521;
-    width: 100%;
-    margin: 0;
-}
-
-.taldeFlex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(20px, 5vw, 40px);
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.articleTaldeak {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-
-/* Audioko kontrolen kolorea */
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-panel {
-    background-color: #f9f4f1;
-}
-
-
-.cardBisuala {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f9f4f1;
-
-
-}
-
-.cardBisuala h3 {
-    font-weight: bolder;
-    color: #871521;
-}
-
-.taldeaBotoia {
-    background-color: #871521;
-    color: #f9f4f1;
-}
-
-.eskutu-kontainer {
-    height: 130px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-
-.eskutu-kontainer img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-}
-
+/* --- OINA (Footer) --- */
 footer {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 40px 20px;
     display: flex;
-    background-color: #871521;
-    color: #f9f4f1;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 30px;
 }
 
 .kontaktua {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    margin: 10px;
+    text-align: center;
 }
 
-.kontaktua a {
+.kontaktua a, .kontaktua p {
+    color: var(--txuria);
     text-decoration: none;
-}
-
-.links a.icono {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease, background-image 0.2s ease;
-}
-
-.links a.instagram {
-    background-image: url("../irudiak/InstaCrema.png");
-    border: #871521 solid 1px;
-    border-radius: 17px;
-}
-
-.links a.youtube {
-    background-image: url("../irudiak/YoutubeCrema.png");
-    border: #871521 solid 1px;
-    border-radius: 17px;
-}
-
-.links a.tiktok {
-    background-image: url("../irudiak/TikTokCrema.png");
-    border: #871521 solid 1px;
-    border-radius: 17px;
-}
-
-.links a.instagram:hover {
-    background-image: url("../irudiak/InstaCrema.png");
-    border: #871521 solid 1px;
-    border-radius: 17px;
-}
-
-.links a.youtube:hover {
-    background-image: url("../irudiak/YoutubeCrema.png");
-    border: #871521 solid 1px;
-    border-radius: 17px;
-}
-
-.links a.tiktok:hover {
-    background-image: url("../irudiak/TikTokCrema.png");
-    border: #871521 solid 1px;
-    border-radius: 17px;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
 }
 
 .links {
     display: flex;
+    gap: 20px;
     align-items: center;
-    gap: 12px;
-    margin: 10px;
-
-}
-
-.berriakMultzoa {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-.berriakBakoitza {
-    margin: 15px 5px;
-    padding: 10px;
+/* Sare sozialen ikonoak (Krema kolorekoak) */
+.icono {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background-color: transparent; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
 }
 
-.jardunaldiakh2 {
-    color: #871521;
-    text-align: center;
-    font-weight: bold;
+.instagram { background-image: url('../irudiak/InstaCrema.png'); }
+.youtube { background-image: url('../irudiak/YoutubeCrema.png'); }
+.tiktok { background-image: url('../irudiak/TikTokCrema.png'); }
+
+.icono:hover {
+    transform: scale(1.15); 
 }
 
-@media (min-width: 800px) {
+/* --- RESPONSIVE DISEINUA (Mugikor eta Tabletetarako) --- */
+@media (max-width: 768px) {
+    /* Pantaila txikietan flotatzea kentzen dugu, bata bestearen gainean jartzeko */
+    .hasieraArtikulo img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto; 
+    }
+
+    .hasieraArtikulo p {
+        text-align: left; 
+    }
+    
     nav {
-        max-width: max-content;
-        padding: 0px;
-        border-radius: 10px;
-        transition: all 0.2s ease;
+        gap: 5px; 
     }
-
-    .articleTaldeak {
-        flex: 0 0 calc(33.333% - 45px);
-        margin-bottom: 0;
+    
+    .menuBotoia a {
+        padding: 10px 15px; 
+        font-size: 0.9rem;
     }
-
-    .logoa {
-        width: 500px;
-
-    }
-
-    .eskutu-kontainer {
-        height: 200px;
-    }
-
-    .kontaktua {
-        gap: 20px;
-    }
-
-    .hasieraArtikulo {
-        max-width: 95%;
-        width: 100%;
-        flex-wrap: nowrap;
-        width: fit-content;
-        gap: 20px;
-    }
-
-    .gaurkoBerriakMultzoa {
-        display: flex;
-        max-width: 1238.400px;
-        gap: 10px;
+    
+    footer {
+        flex-direction: column;
         text-align: center;
     }
-
-    .partidarikOnenaEskutuak {
-        width: 100px;
-    }
-
-    .partidarikOnenaEmaitza p {
-        font-size: 3.5rem;
-    }
-
-    .partidarikOnena {
-        margin: 10px;
-        padding: 15px 15px 40px 15px;
-    }
-
-    .berriakBakoitza {
-        width: 28%;
-    }
-
-    .links a.icono {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        transition: transform 0.3s ease, background-image 0.2s ease;
-    }
-
-    .links a.instagram {
-        background-image: url("../irudiak/Instagramgranate.png");
-        border: #f9f4f1 solid 1px;
-        border-radius: 17px;
-    }
-
-    .links a.youtube {
-        background-image: url("../irudiak/Youtubegranate.png");
-        border: #f9f4f1 solid 1px;
-        border-radius: 17px;
-    }
-
-    .links a.tiktok {
-        background-image: url("../irudiak/TiktokGranate.png");
-        border: #f9f4f1 solid 1px;
-        border-radius: 17px;
-    }
-
-    .links {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin: 10px;
-        padding: 5px;
-    }
-
-    footer {
-        justify-content: space-between;
-    }
-}
-
-.Sailkapena {
-    display: flex;
-    flex-direction: column;
-    color: #871521;
-    width: 90%;
-    align-self: center;
-    margin: 20%;
-    margin: 2cqmax;
-}
-
-.Sailkapena h2 {
-    font-weight: bold;
-    margin-left: 5%;
-}
-
-.Sailkapena img {
-    width: 60%;
-    margin-right: 40%;
-    max-width: 250px;
-}
-
-.sailkapenaTabla {
-    font-size: 150%;
-    border-collapse: collapse;
-    margin-left: 5%;
-    width: 90%;
-    font-family: Arial;
-    align-self: center;
-}
-
-.sailkapenaTabla thead {
-    font-weight: bold;
-    border-bottom: #871521 solid 3px;
-    text-align: center;
-    font-size: 80%;
-    width: 100%;
-}
-
-.sailkapenaTabla th {
-    width: 10%;
-}
-
-.sailkapenaTabla tr {
-    border-bottom: #868283 solid 1px;
-    text-align: center;
-    justify-content: center;
-    font-size: 80%;
-}
-
-.sailkapenaTabla td {
-    width: 10%;
-}
-
-.posisioa {
-    font-weight: bold;
-}
-
-.posisioa h1 {
-    text-align: center;
-    width: 80%;
-}
-
-.sailkapen_talde {
-    display: flex;
-    flex-direction: column;
-    font-size: 80%;
 }
