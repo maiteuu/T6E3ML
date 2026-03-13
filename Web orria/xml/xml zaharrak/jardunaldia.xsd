@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="jardunaldiak">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jardunaldia" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="zenbakia" type="xs:integer"></xs:element>
+                            <xs:element name="partiduak">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="partidua" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="etxeko_taldea_izena" type="xs:string"></xs:element>
+                                                    <xs:element name="kanpoko_taldea_izena" type="xs:string"></xs:element>
+                                                    <xs:element name="etxeko_taldea_eskutua" type="xs:string"></xs:element>
+                                                    <xs:element name="kanpoko_taldea_eskutua" type="xs:string"></xs:element>
+                                                    <xs:element name="etxeko_golak" type="xs:integer"></xs:element>
+                                                    <xs:element name="kanpoko_golak" type="xs:integer"></xs:element>
+                                                    <xs:element name="data" type="xs:date"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
