@@ -34,8 +34,16 @@ img {
 /* --- GOIBURUA (Header) --- */
 header {
     background-color: var(--granatea); /* Goiburua granatea */
-    text-align: center;
-    padding: 20px 10px 10px 10px; 
+    padding: 20px 40px; 
+    display: flex;
+    justify-content: space-between; /* Logoa, menua eta botoia banatzeko */
+    align-items: center; /* Bertikalki zentratzeko */
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.logo-link {
+    flex: 0 0 auto;
 }
 
 .logoa {
@@ -44,13 +52,13 @@ header {
     cursor: pointer;
 }
 
-/* Nabigazio menua */
+/* Nabigazio menua erdian zentratuta */
 nav {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 20px 0;
     flex-wrap: wrap; 
+    flex: 1; /* Tarte librea hartzeko eta erdian kokatzeko */
 }
 
 .menuBotoia a {
@@ -69,6 +77,29 @@ nav {
     color: var(--txuria);
 }
 
+/* --- HASI SAIOA BOTOIA --- */
+.saioa-kontenedorea {
+    flex: 0 0 auto;
+}
+
+.hasi-saioa-botoia {
+    background-color: var(--txuria);
+    color: var(--granatea);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px 25px;
+    border-radius: var(--pill-erradioa);
+    border: 2px solid var(--txuria);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.hasi-saioa-botoia:hover {
+    background-color: var(--granatea);
+    color: var(--txuria);
+}
+
 /* --- EDUKI NAGUSIA (Main) --- */
 main {
     flex: 1;
@@ -83,34 +114,31 @@ main {
     font-weight: bold;
     margin-bottom: 25px;
     color: var(--granatea);
-    /* Izenburua ezkerraldean mantentzen da beti */
     text-align: left; 
 }
 
-/* Edukiontzi nagusia (Nortzuk gara) - Flexbox KENDU eta FLOAT jarri da testuak irudia inguratzeko */
+/* Edukiontzi nagusia (Nortzuk gara) */
 .hasieraArtikulo {
     background-color: var(--txuria); 
     border: 2px solid var(--arrosa-argia);
     border-radius: var(--edukiontzi-erradioa);
     padding: clamp(20px, 5vw, 40px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    /* display: block jarrita dago berez, eta hau behar du edukiontziak irudia ondo barneratzeko: */
     overflow: auto; 
 }
 
 .hasieraArtikulo img {
     width: 100%;
     max-width: 250px;
-    /* Irudia ezkerrera "flotatu" egiten da, testuak inguratu dezan */
-    float: left;
-    margin-right: 30px; /* Tartea irudiaren eskuinaldean */
-    margin-bottom: 15px; /* Tartea irudiaren azpian */
+    float: left; /* Irudia ezkerrera flotatu testuak inguratzeko */
+    margin-right: 30px; 
+    margin-bottom: 15px; 
 }
 
 .hasieraArtikulo p {
     font-size: 1.15rem;
     line-height: 1.6;
-    text-align: justify; /* Testua justifikatuta formara ondo egokitzeko */
+    text-align: justify; 
 }
 
 /* --- OINA (Footer) --- */
@@ -144,7 +172,7 @@ footer {
     justify-content: center;
 }
 
-/* Sare sozialen ikonoak (Krema kolorekoak) */
+/* Sare sozialen ikonoak */
 .icono {
     display: inline-block;
     width: 40px; 
@@ -166,7 +194,16 @@ footer {
 
 /* --- RESPONSIVE DISEINUA (Mugikor eta Tabletetarako) --- */
 @media (max-width: 768px) {
-    /* Pantaila txikietan flotatzea kentzen dugu, bata bestearen gainean jartzeko */
+    header {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .saioa-kontenedorea {
+        margin-top: 10px;
+    }
+
+    /* Pantaila txikietan flotatzea kentzen dugu */
     .hasieraArtikulo img {
         float: none;
         display: block;

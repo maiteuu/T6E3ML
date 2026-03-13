@@ -14,17 +14,22 @@
 
 <body>
     <header>
-        <!-- LOGOA WEB ORRIALDEAREN GOIKO PARTEAN HANDIAN -->
-        <a id="hasieraLogo"><img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa"></a>
-        <!-- WEB ORRIALDEAREN NABEGAZIO MENUA -->
+        <a href="index.php" class="logo-link">
+            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+        </a>
+        
         <nav>
             <div class="menuBotoia"><a href="">Iradokizunak</a></div>
             <div class="menuBotoia"><a href="">Taldeak</a></div>
-            <div class="menuBotoia"><a href="">Hasiera</a></div>
+            <div class="menuBotoia"><a href="index.php">Hasiera</a></div>
             <div class="menuBotoia"><a href="">Sailkapena</a></div>
             <div class="menuBotoia"><a href="">Fitxaketak</a></div>
             <div class="menuBotoia"><a href="">Partiduak</a></div>
         </nav>
+
+        <div class="saioa-kontenedorea">
+            <a href="" class="hasi-saioa-botoia">Hasi saioa</a>
+        </div>
     </header>
     <main>
         <article>
