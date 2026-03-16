@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="irudiak/Ikono-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="estiloa/nireestiloa.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/nirescript.js"></script>
     <title>FNFS - Hasiera</title>
 </head>
 
@@ -28,7 +26,11 @@
         </nav>
 
         <div class="saioa-kontenedorea">
-            <a href="" class="hasi-saioa-botoia">Hasi saioa</a>
+            <?php if (!isset($_SESSION["nombreUsuario"])): ?>
+                <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
+            <?php else: ?>
+                <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
+            <?php endif; ?>
         </div>
     </header>
     <main>

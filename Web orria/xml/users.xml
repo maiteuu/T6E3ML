@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<erabiltzaileak>
+    <erabiltzailea>
+        <izena>admin</izena>
+        <pasahitza>adm</pasahitza>
+        <rol>Administrazioa</rol>
+    </erabiltzailea>
+    <erabiltzailea>
+        <izena>josu</izena>
+        <pasahitza>qwe</pasahitza>
+        <rol>Entrenatzailea</rol>
+    </erabiltzailea>
+    <erabiltzailea>
+        <izena>ane01</izena>
+        <pasahitza>1234</pasahitza>
+        <rol>Bezeroa</rol>
+        <errutinak>
+            <errutina>
+                <irudia>full.png</irudia>
+                <izena>Full Body</izena>
+                <egunak>3 egun astean</egunak>
+            </errutina>
+
+            <errutina>
+                <irudia>cardio.png</irudia>
+                <izena>Cardio</izena>
+                <egunak>2 egun astean</egunak>
+            </errutina>
+
+            <errutina>
+                <irudia>estiramientos.png</irudia>
+                <izena>Luzaketak eta Mugikortasuna</izena>
+                <egunak>egunero</egunak>
+            </errutina>
+        </errutinak>
+    </erabiltzailea>
+    <erabiltzailea>
+        <izena>iker02</izena>
+        <pasahitza>abcd</pasahitza>
+        <rol>Bezeroa</rol>
+        <errutinak>
+            <errutina>
+                <irudia>indarra.png</irudia>
+                <izena>Indarra Orokorra</izena>
+                <egunak>3 egun astean</egunak>
+            </errutina>
+
+            <errutina>
+                <irudia>core.png</irudia>
+                <izena>Core eta Egonkortasuna</izena>
+                <egunak>2 egun astean</egunak>
+            </errutina>
+
+            <errutina>
+                <irudia>stretch.png</irudia>
+                <izena>Luzaketak eta Ariketa Suabeak</izena>
+                <egunak>Egunero 10-15 minutu</egunak>
+            </errutina>
+        </errutinak>
+    </erabiltzailea>
+
+    <erabiltzailea>
+        <izena>maite</izena>
+        <pasahitza>123</pasahitza>
+        <rol>Bezeroa</rol>
+        <errutinak>
+            <errutina>
+                <irudia>hiit.png</irudia>
+                <izena>HIIT Azkarra</izena>
+                <egunak>3 egun astean</egunak>
+            </errutina>
+
+            <errutina>
+                <irudia>yoga.png</irudia>
+                <izena>Yoga eta Arnasketa</izena>
+                <egunak>2 egun astean</egunak>
+            </errutina>
+
+            <errutina>
+                <irudia>circuito.png</irudia>
+                <izena>Indar Zirkuitoa</izena>
+                <egunak>1-2 egun astean</egunak>
+            </errutina>
+        </errutinak>
+    </erabiltzailea>
+</erabiltzaileak>
