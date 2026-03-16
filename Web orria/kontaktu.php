@@ -1,7 +1,6 @@
 <?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,20 +32,50 @@
             <?php endif; ?>
         </div>
     </header>
-    <main>
-        <article>
-            <h1 class="hasierakoTitulua">Nortzuk Gara?</h1>
-            <div class="hasieraArtikulo">
-                <img src="irudiak/PortadaIrudi.jpeg" alt="logo">
-                <p>
-                    Ongi etorri FNFS-ra. Gu areto futbola antolatu, sustatu eta garatzeaz arduratzen den federazioa gara. Gure helburu nagusia kirol honenganako pasioa bazter guztietara zabaltzea da, oinarrizko mailetatik hasi eta kategoria gorenetaraino. Uste irmoa dugu kirola gizartea eraldatzeko eta pertsonak batzeko tresna indartsua dela, eta horregatik, kalitatezko lehiaketak eskaintzeko lan egiten dugu egunero, beti ere gure kideen gozamena lehenetsiz.
-                    <br><br>
-                    Gure jardunaren ardatza kantxan ematen den jokoa baino askoz haratago doa. FNFS-n talde-lana, kiroltasuna, errespetua eta esfortzua bezalako oinarrizko balioak bultzatzen ditugu. Jokalarien garapen integrala bilatzen dugu, arlo fisikoan zein pertsonalean hazteko aukera eskainiz, eta guztiontzako gune seguru, inklusibo eta parekide bat bermatuz. Areto futbola ez da soilik baloi bat ate batean sartzea; laguntasuna, disziplina eta ilusioa partekatzea da.
-                    <br><br>
-                    Beraz, jokalaria, entrenatzailea, epailea zein zalea izan, hemen zure etxea aurkituko duzu. Gure txapelketetan parte hartzera, gure proiektuetan murgiltzera eta astebururo kantxako emozio oro gurekin partekatzera gonbidatzen zaitugu. Egin bat gure komunitatearekin, jantzi zapatilak eta bizi areto futbola gurekin!
-                </p>
-            </div>
-        </article>
+    <main class="iradokizun-main">
+        <div class="formulario-txartela">
+            <form action="gorde.php" method="POST" class="iradokizun-form">
+                
+                <div class="input-gaia-taldea">
+                    <input type="text" name="gaia" class="iradokizun-input" placeholder="Gaia / Asuntoa" required>
+                </div>
+
+                <div class="input-errenkada">
+                    <textarea name="mezua" class="testu-eremua" placeholder="Idatzi zure iradokizuna hemen..." required></textarea>
+                </div>
+
+                <div class="input-grid-2x2">
+                    <div class="input-taldea-iradokizun">
+                        <label for="izena" class="etiketa-beltza">Izena</label>
+                        <input type="text" name="izena" class="iradokizun-input" required>
+                    </div>
+                    
+                    <div class="input-taldea-iradokizun">
+                        <label for="abizena" class="etiketa-beltza">Abizena</label>
+                        <input type="text" name="abizena" class="iradokizun-input" required>
+                    </div>
+                    
+                    <div class="input-taldea-iradokizun">
+                        <label for="email" class="etiketa-beltza">Posta</label>
+                        <div class="input-ikonoarekin">
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-taldea-iradokizun">
+                        <label for="telefonoa" class="etiketa-beltza">Telefonoa</label>
+                        <div class="input-ikonoarekin">
+                            <input type="text" name="telefonoa" pattern="[0-9]{9}" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botoi-ekintzak">
+                    <input type="submit" value="Bidali" class="sartu-botoia">
+                </div>
+
+            </form>
+        </div>
     </main>
     <footer>
         <div class="kontaktua">
@@ -62,5 +91,4 @@
         </div>
     </footer>
 </body>
-
 </html>
