@@ -1,5 +1,5 @@
 /* ========================================= */
-/* --- ALDAGAIAK ETA OINARRIZKO KONFIGURAZIOA --- */
+/* --- ALDAGAI ETA OINARRIZKO KOLOREAK --- */
 /* ========================================= */
 :root {
     --granatea: #871521;
@@ -10,6 +10,7 @@
     --edukiontzi-erradioa: 30px;
 }
 
+/* Dena garbitu hasteko */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,22 +18,23 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Gorputzaren itxura orokorra */
 body {
     background-color: var(--hondoa);
     color: var(--granatea);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    -webkit-overflow-scrolling: touch;
 }
 
+/* Irudiak ez irteteko bere tokitik */
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* ========================================= */
-/* --- GOIBURUA (Header) - Orri nagusietarako --- */
+/* --- GOIBURUA (Header) --- */
 /* ========================================= */
 header {
     background-color: var(--granatea);
@@ -44,6 +46,7 @@ header {
     gap: 20px;
 }
 
+/* Logotipoaren tokia */
 .logo-link {
     flex: 0 0 auto;
 }
@@ -54,6 +57,7 @@ header {
     cursor: pointer;
 }
 
+/* Menuko botoiak */
 nav {
     display: flex;
     justify-content: center;
@@ -75,9 +79,9 @@ nav {
 
 .menuBotoia a:hover {
     background-color: rgba(255, 255, 255, 0.2); 
-    color: var(--txuria);
 }
 
+/* Saioa hasteko botoia */
 .saioa-kontenedorea {
     flex: 0 0 auto;
 }
@@ -101,7 +105,7 @@ nav {
 }
 
 /* ========================================= */
-/* --- EDUKI NAGUSIA (Main Index) --- */
+/* --- ORRI NAGUSIA (Index) --- */
 /* ========================================= */
 main {
     flex: 1;
@@ -111,21 +115,21 @@ main {
     margin: 0 auto;
 }
 
+/* Izenburu nagusia */
 .hasierakoTitulua {
     font-size: clamp(2rem, 5vw, 2.8rem);
     font-weight: bold;
     margin-bottom: 25px;
     color: var(--granatea);
-    text-align: left; 
 }
 
+/* Hasierako testuaren kaxa */
 .hasieraArtikulo {
     background-color: var(--txuria); 
     border: 2px solid var(--arrosa-argia);
     border-radius: var(--edukiontzi-erradioa);
     padding: clamp(20px, 5vw, 40px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    overflow: hidden; 
 }
 
 .hasieraArtikulo img {
@@ -156,6 +160,7 @@ footer {
     gap: 30px;
 }
 
+/* Helbidea eta datuak */
 .kontaktua {
     text-align: center;
 }
@@ -168,6 +173,7 @@ footer {
     font-size: 0.95rem;
 }
 
+/* Sare sozialetako ikonoak */
 .links {
     display: flex;
     gap: 20px;
@@ -179,7 +185,6 @@ footer {
     display: inline-block;
     width: 40px; 
     height: 40px;
-    background-color: transparent; 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -222,6 +227,7 @@ footer {
     max-width: 250px;
 }
 
+/* Login kaxa handia */
 .login-txartela {
     background-color: var(--txuria);
     border: 6px solid var(--granatea);
@@ -242,9 +248,9 @@ footer {
     border-radius: 50%;
     padding: 10px;
     margin-bottom: 25px;
-    object-fit: contain;
 }
 
+/* Login errore mezua */
 .error-mezua {
     color: red;
     font-weight: bold;
@@ -256,9 +262,9 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
+/* Inputen taldea (Etiketa + Inputa) */
 .input-taldea {
     width: 100%;
     margin-bottom: 20px;
@@ -270,7 +276,6 @@ footer {
     font-weight: bold;
     color: black;
     margin-bottom: 8px;
-    font-size: 0.95rem;
     padding-left: 15px; 
 }
 
@@ -288,7 +293,7 @@ footer {
     border-color: var(--granatea);
 }
 
-/* Botoiak (Sartu, Bueltatu, Bidali) */
+/* Botoien gunea (Sartu, Bueltatu, Bidali) */
 .botoi-ekintzak {
     display: flex;
     flex-wrap: wrap; 
@@ -296,9 +301,9 @@ footer {
     margin-top: 15px;
     width: 100%;
     justify-content: center;
-    align-items: center;
 }
 
+/* Botoi gorria (Sartu / Bidali) */
 .sartu-botoia {
     background-color: #ff3b3b; 
     color: var(--txuria);
@@ -308,8 +313,7 @@ footer {
     border: none;
     border-radius: var(--pill-erradioa);
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    margin-top: 0; 
+    transition: transform 0.2s ease;
     flex: 1; 
     min-width: 120px;
 }
@@ -319,6 +323,7 @@ footer {
     transform: scale(1.05); 
 }
 
+/* Botoi grisa (Bueltatu) */
 .bueltatu-botoia {
     background-color: #e0e0e0; 
     color: #333333; 
@@ -331,18 +336,15 @@ footer {
     transition: all 0.2s ease;
     text-align: center;
     flex: 1; 
-    min-width: 120px;
 }
 
 .bueltatu-botoia:hover {
     background-color: #cccccc; 
-    border-color: #cccccc;
-    color: #111111;
     transform: scale(1.05);
 }
 
 /* ========================================= */
-/* --- IRADOKIZUNAK ORRIA (Sugerencias) --- */
+/* --- IRADOKIZUNAK ORRIA (Kontaktu.php) --- */
 /* ========================================= */
 
 .iradokizun-main {
@@ -350,17 +352,16 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 40px 20px;
 }
 
-/* Txartel handia */
+/* Formularioaren kaxa handia */
 .formulario-txartela {
     background-color: var(--txuria);
-    border: 8px solid var(--granatea); /* Borde potoloa */
+    border: 8px solid var(--granatea);
     border-radius: 40px;
     padding: 50px;
     width: 100%;
-    max-width: 1000px; /* Zabalera handiagoa */
+    max-width: 1000px; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
@@ -368,10 +369,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
 }
 
-/* 1. Goiko inputa (Gaia) eta galdera ikurra */
+/* Goiko inputa (Gaia) */
 .input-gaia-taldea {
     display: flex;
     align-items: center;
@@ -380,13 +380,14 @@ footer {
     max-width: 400px;
 }
 
+/* Galdera ikurraren diseinua */
 .galdera-ikurra {
     font-size: 1.8rem;
     font-weight: bold;
     color: black;
 }
 
-/* Estilo orokorrak Iradokizunen inputentzat (borde potolo gris argia) */
+/* Inputen itxura orokorra */
 .iradokizun-input {
     width: 100%;
     padding: 15px 25px;
@@ -394,14 +395,13 @@ footer {
     border-radius: var(--pill-erradioa);
     font-size: 1rem;
     outline: none;
-    transition: border-color 0.3s ease;
 }
 
 .iradokizun-input:focus {
     border-color: var(--granatea);
 }
 
-/* 2. Testu-eremua (Textarea) */
+/* Testu handia idazteko kaxa */
 .testu-eremua {
     width: 100%;
     padding: 25px;
@@ -411,19 +411,17 @@ footer {
     outline: none;
     resize: vertical;
     min-height: 200px;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
 }
 
 .testu-eremua:focus {
     border-color: var(--granatea);
 }
 
-/* 3. Grid 2x2 beheko datuetarako */
+/* Datu pertsonalen kaxak (Zutabeka jartzeko) */
 .input-grid-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 40px; /* Goitik-behera 30px, ezker-eskuin 40px */
+    gap: 30px 40px; 
 }
 
 .input-taldea-iradokizun {
@@ -432,7 +430,7 @@ footer {
     align-items: flex-start;
 }
 
-/* Etiketa beltzak (pilulak) */
+/* Etiketa beltzak (Izena, Abizena...) */
 .etiketa-beltza {
     background-color: black;
     color: white;
@@ -441,10 +439,9 @@ footer {
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 10px;
-    display: inline-block;
 }
 
-/* Ikonoa duten inputak (@ eta +) barruan integratzeko */
+/* Ikonoa daukaten inputak (@ eta +) */
 .input-ikonoarekin {
     display: flex;
     align-items: center;
@@ -453,7 +450,6 @@ footer {
     border-radius: var(--pill-erradioa);
     padding: 5px 20px;
     background-color: var(--txuria);
-    transition: border-color 0.3s ease;
 }
 
 .input-ikonoarekin:focus-within {
@@ -476,9 +472,22 @@ footer {
     background: transparent;
 }
 
+/* ========================================= */
+/* --- ONDO GORDE DELA ESATEKO MEZUA --- */
+/* ========================================= */
+.mezu-berdea {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 2px solid #c3e6cb;
+}
 
 /* ========================================= */
-/* --- RESPONSIVE DISEINUA (Mugikorrak eta Tabletak) --- */
+/* --- PANTAILA TXIKIETARAKO (Mugikorrak) --- */
 /* ========================================= */
 @media (max-width: 768px) {
     header {
@@ -490,27 +499,10 @@ footer {
         margin-top: 10px;
     }
 
-    main {
-        padding: 20px 15px;
-    }
-
     .hasieraArtikulo img {
         float: none;
         display: block;
         margin: 0 auto 20px auto; 
-    }
-
-    .hasieraArtikulo p {
-        text-align: left; 
-    }
-    
-    nav {
-        gap: 5px; 
-    }
-    
-    .menuBotoia a {
-        padding: 10px 15px; 
-        font-size: 0.9rem;
     }
     
     footer {
@@ -519,23 +511,18 @@ footer {
         gap: 20px;
     }
 
-    /* Iradokizunak Responsive */
+    /* Iradokizunak orria mugikorrean */
     .formulario-txartela {
         padding: 30px 20px;
         border-width: 5px;
     }
 
     .input-grid-2x2 {
-        grid-template-columns: 1fr; /* Pantaila txikietan zutabe bakarrean jarri */
+        grid-template-columns: 1fr; /* Dena zutabe batean jartzen da */
         gap: 25px;
-    }
-    
-    .testu-eremua {
-        min-height: 150px;
     }
 }
 
-/* Pantallas extra pequeñas (móviles muy estrechos) */
 @media (max-width: 480px) {
     .login-txartela {
         padding: 25px 20px;
@@ -544,7 +531,6 @@ footer {
 
     .botoi-ekintzak {
         flex-direction: column; 
-        gap: 10px;
     }
 
     .bueltatu-botoia, .sartu-botoia {
