@@ -46,7 +46,6 @@ header {
     gap: 20px;
 }
 
-/* Logotipoaren tokia */
 .logo-link {
     flex: 0 0 auto;
 }
@@ -57,7 +56,6 @@ header {
     cursor: pointer;
 }
 
-/* Menuko botoiak */
 nav {
     display: flex;
     justify-content: center;
@@ -81,7 +79,6 @@ nav {
     background-color: rgba(255, 255, 255, 0.2); 
 }
 
-/* Saioa hasteko botoia */
 .saioa-kontenedorea {
     flex: 0 0 auto;
 }
@@ -115,7 +112,6 @@ main {
     margin: 0 auto;
 }
 
-/* Izenburu nagusia */
 .hasierakoTitulua {
     font-size: clamp(2rem, 5vw, 2.8rem);
     font-weight: bold;
@@ -123,7 +119,6 @@ main {
     color: var(--granatea);
 }
 
-/* Hasierako testuaren kaxa */
 .hasieraArtikulo {
     background-color: var(--txuria); 
     border: 2px solid var(--arrosa-argia);
@@ -160,7 +155,6 @@ footer {
     gap: 30px;
 }
 
-/* Helbidea eta datuak */
 .kontaktua {
     text-align: center;
 }
@@ -173,7 +167,6 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Sare sozialetako ikonoak */
 .links {
     display: flex;
     gap: 20px;
@@ -227,7 +220,6 @@ footer {
     max-width: 250px;
 }
 
-/* Login kaxa handia */
 .login-txartela {
     background-color: var(--txuria);
     border: 6px solid var(--granatea);
@@ -250,7 +242,6 @@ footer {
     margin-bottom: 25px;
 }
 
-/* Login errore mezua */
 .error-mezua {
     color: red;
     font-weight: bold;
@@ -264,7 +255,6 @@ footer {
     flex-direction: column;
 }
 
-/* Inputen taldea (Etiketa + Inputa) */
 .input-taldea {
     width: 100%;
     margin-bottom: 20px;
@@ -293,7 +283,6 @@ footer {
     border-color: var(--granatea);
 }
 
-/* Botoien gunea (Sartu, Bueltatu, Bidali) */
 .botoi-ekintzak {
     display: flex;
     flex-wrap: wrap; 
@@ -303,7 +292,6 @@ footer {
     justify-content: center;
 }
 
-/* Botoi gorria (Sartu / Bidali) */
 .sartu-botoia {
     background-color: #ff3b3b; 
     color: var(--txuria);
@@ -323,7 +311,6 @@ footer {
     transform: scale(1.05); 
 }
 
-/* Botoi grisa (Bueltatu) */
 .bueltatu-botoia {
     background-color: #e0e0e0; 
     color: #333333; 
@@ -346,7 +333,6 @@ footer {
 /* ========================================= */
 /* --- IRADOKIZUNAK ORRIA (Kontaktu.php) --- */
 /* ========================================= */
-
 .iradokizun-main {
     display: flex;
     flex-direction: column;
@@ -354,7 +340,6 @@ footer {
     width: 100%;
 }
 
-/* Formularioaren kaxa handia */
 .formulario-txartela {
     background-color: var(--txuria);
     border: 8px solid var(--granatea);
@@ -371,7 +356,6 @@ footer {
     gap: 30px;
 }
 
-/* Goiko inputa (Gaia) */
 .input-gaia-taldea {
     display: flex;
     align-items: center;
@@ -380,14 +364,6 @@ footer {
     max-width: 400px;
 }
 
-/* Galdera ikurraren diseinua */
-.galdera-ikurra {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: black;
-}
-
-/* Inputen itxura orokorra */
 .iradokizun-input {
     width: 100%;
     padding: 15px 25px;
@@ -401,7 +377,6 @@ footer {
     border-color: var(--granatea);
 }
 
-/* Testu handia idazteko kaxa */
 .testu-eremua {
     width: 100%;
     padding: 25px;
@@ -417,7 +392,6 @@ footer {
     border-color: var(--granatea);
 }
 
-/* Datu pertsonalen kaxak (Zutabeka jartzeko) */
 .input-grid-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -430,7 +404,6 @@ footer {
     align-items: flex-start;
 }
 
-/* Etiketa beltzak (Izena, Abizena...) */
 .etiketa-beltza {
     background-color: black;
     color: white;
@@ -441,40 +414,6 @@ footer {
     margin-left: 10px;
 }
 
-/* Ikonoa daukaten inputak (@ eta +) */
-.input-ikonoarekin {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border: 5px solid #e5e5e5;
-    border-radius: var(--pill-erradioa);
-    padding: 5px 20px;
-    background-color: var(--txuria);
-}
-
-.input-ikonoarekin:focus-within {
-    border-color: var(--granatea);
-}
-
-.input-ikonoarekin .ikonoa {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: black;
-    margin-right: 15px;
-}
-
-.input-ikonoarekin input {
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    padding: 10px 0;
-    background: transparent;
-}
-
-/* ========================================= */
-/* --- ONDO GORDE DELA ESATEKO MEZUA --- */
-/* ========================================= */
 .mezu-berdea {
     background-color: #d4edda;
     color: #155724;
@@ -484,6 +423,277 @@ footer {
     margin-bottom: 20px;
     font-weight: bold;
     border: 2px solid #c3e6cb;
+}
+
+/* ========================================= */
+/* --- TALDEAK ORRIA (Taldeak.php) --- */
+/* ========================================= */
+.taldeak-main-orria {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulu-kaxa-zentratua {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulu-gorri-pilula {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 10px 40px;
+    border-radius: var(--pill-erradioa);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.taldeen-zerrenda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+}
+
+.talde-blokea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.talde-goiko-aldea {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+}
+
+.talde-logo-kaxa {
+    flex: 0 0 150px; 
+}
+
+.ezkutu-formularioa {
+    margin: 0;
+    padding: 0;
+}
+
+.ezkutu-botoia {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+
+.talde-ezkutu-klikagarria {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.talde-ezkutu-klikagarria:hover {
+    transform: scale(1.1);
+}
+
+.talde-informazioa {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.talde-izen-grisa {
+    background-color: #e5e5e5;
+    color: var(--granatea);
+    padding: 8px 30px;
+    border-radius: var(--pill-erradioa);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.talde-testua {
+    color: black;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* ========================================= */
+/* --- SAILKAPENA ORRIA (Sailkapena.php) --- */
+/* ========================================= */
+.sailkapena-main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sailkapen-kaxa {
+    width: 100%;
+    overflow-x: auto; /* Mugikorretan ondo ikusteko */
+    background-color: var(--txuria);
+    border: 5px solid var(--granatea);
+    border-radius: var(--edukiontzi-erradioa);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.sailkapen-taula {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.sailkapen-taula th {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.sailkapen-taula th:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.sailkapen-taula th:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sailkapen-taula td {
+    padding: 15px 10px;
+    border-bottom: 2px solid #eee;
+    color: #333;
+}
+
+.sailkapen-taula tr:last-child td {
+    border-bottom: none;
+}
+
+.sailkapen-taula tbody tr:nth-child(even) {
+    background-color: var(--arrosa-argia);
+}
+
+.sailkapen-taula tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* ========================================= */
+/* --- JOKALARIAK ORRIA (Txartel formatua) --- */
+/* ========================================= */
+.jokalariak-main-orria {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Jokalariak kokatzeko sarea (Grid) */
+.jokalari-sarea {
+    display: grid;
+    /* Pantailaren arabera zutabeak automatikoki moldatzen dira */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Jokalari bakoitzaren txartela */
+.jokalari-txartela {
+    background-color: var(--txuria);
+    border: 3px solid #e5e5e5;
+    border-radius: var(--edukiontzi-erradioa);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex; /* Datuak horizontalean jartzeko */
+    align-items: center;
+    gap: 20px; /* Argazkia eta testuaren arteko tartea */
+}
+
+.jokalari-txartela:hover {
+    transform: scale(1.03);
+    border-color: var(--granatea);
+}
+
+/* Txartel barruko argazkia */
+.txartel-argazki-kaxa {
+    flex: 0 0 auto;
+}
+
+.txartel-argazkia {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--granatea);
+}
+
+/* Txartel barruko testuak */
+.txartel-informazioa {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.jokalari-izena {
+    color: var(--granatea);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--arrosa-argia);
+    padding-bottom: 5px;
+}
+
+.jokalari-datua {
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.itzuli-kaxa {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ========================================= */
+/* --- TAULAK ETA KLASE KOMUNAK (Orokorra)- */
+/* ========================================= */
+
+.ezkerrera {
+    text-align: left !important;
+}
+
+.talde-izena-taula {
+    font-weight: bold;
+    color: var(--granatea);
+}
+
+.puntu-nabarmenak {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: var(--granatea);
 }
 
 /* ========================================= */
@@ -511,15 +721,38 @@ footer {
         gap: 20px;
     }
 
-    /* Iradokizunak orria mugikorrean */
     .formulario-txartela {
         padding: 30px 20px;
         border-width: 5px;
     }
 
     .input-grid-2x2 {
-        grid-template-columns: 1fr; /* Dena zutabe batean jartzen da */
+        grid-template-columns: 1fr; 
         gap: 25px;
+    }
+    
+    /* Mugikorretan txartelak bertikalean hobeto ikusteko aukera */
+    .jokalari-txartela {
+        flex-direction: column;
+        text-align: center;
+    }
+    .jokalari-izena {
+        border-bottom: none;
+        border-top: 2px solid var(--arrosa-argia);
+        padding-top: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .talde-goiko-aldea {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .talde-informazioa {
+        align-items: center;
     }
 }
 

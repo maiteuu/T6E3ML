@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Eguna eta ordua gordetzen ditugu
     $data_ordua = date('Y-m-d H:i:s');
 
-    $fitxategia = 'iradokizunak.xml';
+    $fitxategia = 'xml/iradokizunak.xml';
 
     // Fitxategia existitzen den begiratzen dugu
     if (file_exists($fitxategia)) {

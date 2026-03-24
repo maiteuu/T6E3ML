@@ -17,7 +17,7 @@
         
         <nav>
             <div class="menuBotoia"><a href="kontaktu.php">Iradokizunak</a></div>
-            <div class="menuBotoia"><a href="">Taldeak</a></div>
+            <div class="menuBotoia"><a href="taldeak.php">Taldeak</a></div>
             <div class="menuBotoia"><a href="index.php">Hasiera</a></div>
             <div class="menuBotoia"><a href="">Sailkapena</a></div>
             <div class="menuBotoia"><a href="">Fitxaketak</a></div>

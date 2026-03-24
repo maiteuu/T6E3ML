@@ -14,7 +14,7 @@
     $pass = $_POST["password"];
 
     #XPath kontsulta
-    $consulta = "//erabiltzailea[izena='$user' and pasahitza='$pass']";
+    $consulta = "//erabiltzailea[erabiltzaile_izena='$user' and pasahitza='$pass']";
 
     #Xpath kontsulta betetzen duten nodoak bilatzen ditut
     $erabiltzaileak = $xpath->query($consulta);
