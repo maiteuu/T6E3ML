@@ -28,6 +28,7 @@
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -55,22 +56,22 @@
                 <div class="input-grid-2x2">
                     <div class="input-taldea-iradokizun">
                         <label for="izena" class="etiketa-beltza">Izena</label>
-                        <input type="text" name="izena" id="izena" class="iradokizun-input" required>
+                        <input type="text" name="izena" id="izena" class="iradokizun-input" placeholder="Adibidea: juan" required>
                     </div>
                     
                     <div class="input-taldea-iradokizun">
                         <label for="abizena" class="etiketa-beltza">Abizena</label>
-                        <input type="text" name="abizena" id="abizena" class="iradokizun-input" required>
+                        <input type="text" name="abizena" id="abizena" class="iradokizun-input" placeholder="Adibidea: agirre" required>
                     </div>
                     
                     <div class="input-taldea-iradokizun">
                         <label for="email" class="etiketa-beltza">Posta</label>
-                        <input type="email" name="email" id="email" class="iradokizun-input" required>
+                        <input type="email" name="email" id="email" class="iradokizun-input" placeholder="Adibidea: juanagirre@gmail.com" required>
                     </div>
                     
                     <div class="input-taldea-iradokizun">
                         <label for="telefonoa" class="etiketa-beltza">Telefonoa</label>
-                        <input type="text" name="telefonoa" id="telefonoa" class="iradokizun-input" pattern="[0-9]{9}" required>
+                        <input type="text" name="telefonoa" id="telefonoa" class="iradokizun-input" placeholder="Adibidea: 987654321" pattern="[0-9]{9}" required>
                     </div>
                 </div>
 

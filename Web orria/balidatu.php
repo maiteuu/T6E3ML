@@ -1,7 +1,7 @@
 <?php
     session_start();
     $xml = new DOMDocument();
-    $xml->load(filename:"xml/users.xml");
+    $xml->load("xml/users.xml");
 
     #XPath erabiltzcko aldagai berri bat sortuko dugu
     $xpath = new DOMXPath($xml);
@@ -23,6 +23,9 @@
     $numNodos = $erabiltzaileak->length;
     if($numNodos > 0) {
         $_SESSION["nombreUsuario"] = $user;
+        
+        $_SESSION["tipoUsuario"] = $xpath->query("//erabiltzailea[erabiltzaile_izena='$user' and pasahitza='$pass']/erabiltzaile_mota")->item(0)->nodeValue;        
+        
         header("Location:index.php");
     } else {
         header("Location:login.php?error=1");

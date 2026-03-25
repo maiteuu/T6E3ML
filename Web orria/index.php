@@ -29,6 +29,7 @@
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>

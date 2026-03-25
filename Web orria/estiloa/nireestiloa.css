@@ -79,8 +79,13 @@ nav {
     background-color: rgba(255, 255, 255, 0.2); 
 }
 
+/* Saioa Hasi / Itxi Saioa kontenedorea */
 .saioa-kontenedorea {
     flex: 0 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 8px;               
 }
 
 .hasi-saioa-botoia {
@@ -99,6 +104,17 @@ nav {
 .hasi-saioa-botoia:hover {
     background-color: var(--granatea);
     color: var(--txuria);
+}
+
+.saioa-kontenedorea p,
+.saioa-kontenedorea span,
+.erabiltzaile-testua {
+    color: var(--txuria); 
+    margin-right: 0;      
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0; 
 }
 
 /* ========================================= */
@@ -139,6 +155,7 @@ main {
     font-size: 1.15rem;
     line-height: 1.6;
     text-align: justify; 
+    color: black;
 }
 
 /* ========================================= */
@@ -459,19 +476,28 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 60px; 
+    gap: 30px; /* HAU ALDATU DA (60px-tik 30px-ra) */
 }
 
+/* HAU DA ALDATU DEN BLOKEA LERROA JARTZEKO */
 .talde-blokea {
     display: flex;
     flex-direction: column;
     width: 100%;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 30px;
+}
+
+/* ETA HAU DA AZKENEKOARI LERROA KENTZEKO MAGIA */
+.talde-blokea:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .talde-goiko-aldea {
     display: flex;
     gap: 30px;
-    align-items: flex-start; 
+    align-items: center; 
     margin-bottom: 20px;
 }
 
@@ -543,7 +569,7 @@ footer {
 
 .sailkapen-kaxa {
     width: 100%;
-    overflow-x: auto; /* Mugikorretan ondo ikusteko */
+    overflow-x: auto; 
     background-color: var(--txuria);
     border: 5px solid var(--granatea);
     border-radius: var(--edukiontzi-erradioa);
@@ -608,17 +634,14 @@ footer {
     align-items: center;
 }
 
-/* Jokalariak kokatzeko sarea (Grid) */
 .jokalari-sarea {
     display: grid;
-    /* Pantailaren arabera zutabeak automatikoki moldatzen dira */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     width: 100%;
     margin-bottom: 40px;
 }
 
-/* Jokalari bakoitzaren txartela */
 .jokalari-txartela {
     background-color: var(--txuria);
     border: 3px solid #e5e5e5;
@@ -626,9 +649,9 @@ footer {
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, border-color 0.3s ease;
-    display: flex; /* Datuak horizontalean jartzeko */
+    display: flex; 
     align-items: center;
-    gap: 20px; /* Argazkia eta testuaren arteko tartea */
+    gap: 20px; 
 }
 
 .jokalari-txartela:hover {
@@ -636,7 +659,6 @@ footer {
     border-color: var(--granatea);
 }
 
-/* Txartel barruko argazkia */
 .txartel-argazki-kaxa {
     flex: 0 0 auto;
 }
@@ -649,7 +671,6 @@ footer {
     border: 3px solid var(--granatea);
 }
 
-/* Txartel barruko testuak */
 .txartel-informazioa {
     display: flex;
     flex-direction: column;
@@ -707,6 +728,13 @@ footer {
     
     .saioa-kontenedorea {
         margin-top: 10px;
+        gap: 10px;
+    }
+
+    .saioa-kontenedorea p,
+    .saioa-kontenedorea span,
+    .erabiltzaile-testua {
+        text-align: center;
     }
 
     .hasieraArtikulo img {
@@ -731,7 +759,6 @@ footer {
         gap: 25px;
     }
     
-    /* Mugikorretan txartelak bertikalean hobeto ikusteko aukera */
     .jokalari-txartela {
         flex-direction: column;
         text-align: center;

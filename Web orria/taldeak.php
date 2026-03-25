@@ -29,6 +29,7 @@
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -55,30 +56,38 @@
                 if ($talde_guztiak !== false) {
                     foreach ($talde_guztiak as $taldea) {
                         
-                        // Datuak hartu.
+                        // --- ZURE XML-AREN ETIKETA ZEHATZAK HARTU ---
                         $izena = $taldea->Talde_Izena;
                         $logoa = $taldea->logoa;
                         $deskribapena = $taldea->deskribapena;
+                        $lehendakaria = $taldea->Lehendakari_Izena; 
+                        $bazkideak = $taldea->N_Bazkideak;
+                        $sorrera_data = $taldea->Sorrera_Data;
 
                         echo '<div class="talde-blokea">';
                             echo '<div class="talde-goiko-aldea">';
                                 
                                 // Ezkerraldea: Logoa formulario baten barruan.
                                 echo '<div class="talde-logo-kaxa">';
-                                    // Formularioa POST bidez bidaltzeko.
                                     echo '<form action="jokalariak.php" method="POST" class="ezkutu-formularioa">';
-                                        
-                                        // Botoiak berak bidaltzen du taldearen izena (name eta value erabiliz).
                                         echo '<button type="submit" name="taldea" value="' . $izena . '" class="ezkutu-botoia">';
-                                            echo '<img src="' . $logoa . '" alt="Logoa" class="talde-ezkutu-klikagarria">';
+                                            echo '<img src="' . $logoa . '" alt="' . $izena . ' Logoa" class="talde-ezkutu-klikagarria">';
                                         echo '</button>';
-                                        
                                     echo '</form>';
                                 echo '</div>';
                                 
-                                // Eskuinaldea: Izena eta testua.
+                                // Eskuinaldea: Izena, datu berriak lerro batean eta testua.
                                 echo '<div class="talde-informazioa">';
                                     echo '<h2 class="talde-izen-grisa">' . $izena . '</h2>';
+                                    
+                                    // ---> DATUAK LERRO BATEAN (FLEXBOX BIDEZ) <---
+                                    echo '<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; font-size: 0.95rem; color: #444;">';
+                                        echo '<p style="margin: 0;"><strong>Lehendakaria:</strong> ' . $lehendakaria . '</p>';
+                                        echo '<p style="margin: 0;"><strong>Sorrera:</strong> ' . $sorrera_data . '</p>';
+                                        echo '<p style="margin: 0;"><strong>Bazkideak:</strong> ' . $bazkideak . '</p>';
+                                    echo '</div>';
+                                    
+                                    // Deskribapena
                                     echo '<p class="talde-testua">' . $deskribapena . '</p>';
                                 echo '</div>';
 
