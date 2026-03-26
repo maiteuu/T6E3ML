@@ -1,0 +1,109 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="irudiak/Ikono-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="estiloa/nireestiloa.css">
+    <title>FNFS - Iritziak</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.php" class="logo-link">
+            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+        </a>
+        
+        <nav>
+            <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
+            <div class="menuBotoia"><a href="kontaktu.php">Iradokizunak</a></div>
+            <div class="menuBotoia"><a href="taldeak.php">Taldeak</a></div>
+            <div class="menuBotoia"><a href="index.php">Hasiera</a></div>
+            <div class="menuBotoia"><a href="">Sailkapena</a></div>
+            <div class="menuBotoia"><a href="">Fitxaketak</a></div>
+            <div class="menuBotoia"><a href="">Partiduak</a></div>
+        </nav>
+
+        <div class="saioa-kontenedorea">
+            <?php if (!isset($_SESSION["nombreUsuario"])): ?>
+                <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
+            <?php else: ?>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
+            <?php endif; ?>
+        </div>
+    </header>
+    
+    <main class="iritziak-main-orria">
+        <div class="titulu-kaxa-zentratua">
+            <h1 class="titulu-gorri-pilula">Erabiltzaileen Iritziak</h1>
+        </div>
+
+        <div class="iritziak-sarea">
+            <?php
+            // XML fitxategiaren bidea
+            $fitxategia = 'xml/iradokizunak.xml';
+
+            if (file_exists($fitxategia)) {
+                $xml = simplexml_load_file($fitxategia);
+                
+                // Suposatzen dugu XML-aren egitura <iradokizunak><iradokizuna> dela
+                if ($xml && count($xml->iradokizuna) > 0) {
+                    foreach ($xml->iradokizuna as $iritzia) {
+                        
+                        $izena = $iritzia->izena; 
+                        $abizena = $iritzia->abizena;
+                        $gaia  = $iritzia->gaia;
+                        $mezua = $iritzia->mezua;
+                        $data  = $iritzia->data;
+
+                        $izenOsoa = $izena . ' ' . $abizena;
+
+                        echo '<div class="iritzi-txartela">';
+                            echo '<div class="iritzi-goiburua">';
+                                echo '<div class="iritzi-avatar">';
+                                    // AQUI ESTA EL CAMBIO SOLICITADO
+                                    echo '<img src="irudiak/foto_perfil_predefinido.webp" alt="Erabiltzailea" class="avatar-irudia">';
+                                echo '</div>';
+                                
+                                echo '<div class="iritzi-datuak">';
+                                    echo '<h3>' . $izenOsoa . '</h3>';
+                                    echo '<span class="iritzi-gaia">Gaia: ' . $gaia . '</span><br>';
+                                    echo '<span class="iritzi-data">' . $data . '</span>';
+                                
+                                echo '</div>';
+                            echo '</div>';
+                            echo '<div class="iritzi-gorputza">';
+                                // Hemen nl2br mantentzen dugu lerro-jauziak errespetatzeko
+                                echo '<p>"' . nl2br($mezua) . '"</p>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo '<p class="iritzi-hutsik">Oraindik ez dago iritzirik. Izan zaitez lehena!</p>';
+                }
+            } else {
+                echo '<p class="iritzi-errorea">Errorea: Ezin izan da iritzien fitxategia aurkitu (iradokizunak.xml).</p>';
+            }
+            ?>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="kontaktua">
+            <a href="https://www.google.com/maps/place/P.%C2%BA+de+la+Castellana,+151,+4%C2%BAB,+Tetu%C3%A1n,+28046+Madrid/@40.4608003,-3.6930766,663m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd42291b0928b133:0x9b65449e87642aa0!8m2!3d40.4608003!4d-3.6905017!16s%2Fg%2F11lkzhrg_k?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="">P.º de la Castellana, 151, 4ºB</a>
+            <p>+34 91 350 25 01</p>
+            <a href="mailto:fnfs@fnfs.es" class="">fnfs@fnfs.es</a>
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/lnfs89" class="icono instagram" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCiSSamUOaeCFQS9MXVqhOPw" class="icono youtube" target="_blank"></a>
+            <a href="https://www.tiktok.com/@lnfs89?lang=es" class="icono tiktok" target="_blank"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

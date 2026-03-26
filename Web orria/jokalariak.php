@@ -28,6 +28,7 @@ if (empty($talde_izena)) {
         </a>
         
         <nav>
+            <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
             <div class="menuBotoia"><a href="kontaktu.php">Iradokizunak</a></div>
             <div class="menuBotoia"><a href="taldeak.php">Taldeak</a></div>
             <div class="menuBotoia"><a href="index.php">Hasiera</a></div>
