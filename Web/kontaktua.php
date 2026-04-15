@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php
+session_start();
+if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'entrenatzailea') {
+    header("Location: index.php");
+    exit();
+}
+?>
 <!doctype html>
 <html>
 <head>
@@ -16,13 +22,21 @@
         </a>
         
         <nav>
-            <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
-            <div class="menuBotoia"><a href="kontaktu.php">Iradokizunak</a></div>
-            <div class="menuBotoia"><a href="taldeak.php">Taldeak</a></div>
+            <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
+                <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
+            <?php endif; ?>
+
+            <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'entrenatzailea'): ?>
+                <div class="menuBotoia"><a href="kontaktua.php">FeedBack</a></div>
+            <?php endif; ?>
+
+            <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'administratzailea'): ?>
+                <div class="menuBotoia"><a href="erabiltzaileak.php">Erabiltzaileak</a></div>
+            <?php endif; ?>
+
             <div class="menuBotoia"><a href="index.php">Hasiera</a></div>
-            <div class="menuBotoia"><a href="">Sailkapena</a></div>
-            <div class="menuBotoia"><a href="">Fitxaketak</a></div>
-            <div class="menuBotoia"><a href="">Partiduak</a></div>
+            <div class="menuBotoia"><a href="sailkapena.php">Sailkapena</a></div>
+            <div class="menuBotoia"><a href="partiduak.php">Partiduak</a></div>
         </nav>
 
         <div class="saioa-kontenedorea">
@@ -51,7 +65,7 @@
                 </div>
 
                 <div class="input-errenkada">
-                    <textarea name="mezua" class="testu-eremua" placeholder="Idatzi zure iradokizuna hemen..." required></textarea>
+                    <textarea name="mezua" class="testu-eremua" placeholder="Idatzi zure feedback-a hemen..." required></textarea>
                 </div>
 
                 <div class="input-grid-2x2">

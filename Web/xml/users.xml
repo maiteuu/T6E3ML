@@ -8,7 +8,7 @@
         </erabiltzailea>
         <erabiltzailea>
             <erabiltzaile_izena>presi</erabiltzaile_izena>
-            <pasahitza>preis</pasahitza>
+            <pasahitza>presi</pasahitza>
             <erabiltzaile_mota>presidentea</erabiltzaile_mota>
         </erabiltzailea>
         <erabiltzailea>
@@ -167,71 +167,71 @@
                 <jaurdunaldia zenbakia="1">
                     <partiduak>
                         <partidua><Id_Par>101</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>102</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>103</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>102</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>103</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="2">
                     <partiduak>
-                        <partidua><Id_Par>104</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>105</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>106</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>104</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>105</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>106</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>4</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="3">
                     <partiduak>
-                        <partidua><Id_Par>107</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>108</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>109</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>107</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>108</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>5</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>109</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="4">
                     <partiduak>
-                        <partidua><Id_Par>110</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>111</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>112</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>110</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>111</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>6</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>112</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="5">
                     <partiduak>
-                        <partidua><Id_Par>113</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>114</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>113</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>114</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
                         <partidua><Id_Par>115</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="6">
                     <partiduak>
-                        <partidua><Id_Par>116</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>117</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>118</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>116</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>5</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>117</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>118</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="7">
                     <partiduak>
-                        <partidua><Id_Par>119</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>120</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Lok>Osasuna Magna</Talde_Lok><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>121</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>119</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>120</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>121</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="8">
                     <partiduak>
-                        <partidua><Id_Par>122</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>123</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>124</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>122</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>4</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>123</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>7</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>124</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="9">
                     <partiduak>
-                        <partidua><Id_Par>125</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>126</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>127</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>125</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>126</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>127</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
                 <jaurdunaldia zenbakia="10">
                     <partiduak>
-                        <partidua><Id_Par>128</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>129</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>130</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>128</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>4</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>129</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>130</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>5</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
             </jaurdunaldiak>
@@ -261,262 +261,7 @@
                         <partidua><Id_Par>209</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
                     </partiduak>
                 </jaurdunaldia>
-                <jaurdunaldia zenbakia="4">
-                    <partiduak>
-                        <partidua><Id_Par>210</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Lok>Osasuna Magna</Talde_Lok><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>211</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>212</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="5">
-                    <partiduak>
-                        <partidua><Id_Par>213</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>214</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>215</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="6">
-                    <partiduak>
-                        <partidua><Id_Par>216</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>217</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>218</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="7">
-                    <partiduak>
-                        <partidua><Id_Par>219</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>220</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Lok>Osasuna Magna</Talde_Lok><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>221</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="8">
-                    <partiduak>
-                        <partidua><Id_Par>222</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>223</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>224</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="9">
-                    <partiduak>
-                        <partidua><Id_Par>225</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>226</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>227</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="10">
-                    <partiduak>
-                        <partidua><Id_Par>228</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>229</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>230</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-            </jaurdunaldiak>
-        </denboraldia>
-
-        <denboraldia>
-            <Urtea>2026</Urtea>
-            <jaurdunaldiak>
-                <jaurdunaldia zenbakia="1">
-                    <partiduak>
-                        <partidua><Id_Par>301</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>302</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>303</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
-                <jaurdunaldia zenbakia="2">
-                    <partiduak>
-                        <partidua><Id_Par>304</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>305</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                        <partidua><Id_Par>306</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
-                    </partiduak>
-                </jaurdunaldia>
             </jaurdunaldiak>
         </denboraldia>
     </denboraldiak>
-
-    <klasifikazioak>
-        <klasifikazioa>
-            <Id_Klasi>101</Id_Klasi>
-            <Denbo_urtea>2024</Denbo_urtea>
-            <Talde_Izena>Barca FS</Talde_Izena>
-            <Puntu_Totalak>30</Puntu_Totalak>
-            <Par_Irabaziak>10</Par_Irabaziak>
-            <Par_Galdutakoak>0</Par_Galdutakoak>
-            <Puntuak_Alde>30</Puntuak_Alde>
-            <Puntuak_Aurka>0</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>102</Id_Klasi>
-            <Denbo_urtea>2024</Denbo_urtea>
-            <Talde_Izena>ElPozo Murcia</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>6</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>103</Id_Klasi>
-            <Denbo_urtea>2024</Denbo_urtea>
-            <Talde_Izena>Inter Movistar</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>6</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>104</Id_Klasi>
-            <Denbo_urtea>2024</Denbo_urtea>
-            <Talde_Izena>Osasuna Magna</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>6</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>105</Id_Klasi>
-            <Denbo_urtea>2024</Denbo_urtea>
-            <Talde_Izena>Palma Futsal</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>6</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>106</Id_Klasi>
-            <Denbo_urtea>2024</Denbo_urtea>
-            <Talde_Izena>Ribera Navarra</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>6</Puntuak_Aurka>
-        </klasifikazioa>
-
-        <klasifikazioa>
-            <Id_Klasi>201</Id_Klasi>
-            <Denbo_urtea>2025</Denbo_urtea>
-            <Talde_Izena>ElPozo Murcia</Talde_Izena>
-            <Puntu_Totalak>30</Puntu_Totalak>
-            <Par_Irabaziak>10</Par_Irabaziak>
-            <Par_Galdutakoak>0</Par_Galdutakoak>
-            <Puntuak_Alde>20</Puntuak_Alde>
-            <Puntuak_Aurka>0</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>202</Id_Klasi>
-            <Denbo_urtea>2025</Denbo_urtea>
-            <Talde_Izena>Barca FS</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>4</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>203</Id_Klasi>
-            <Denbo_urtea>2025</Denbo_urtea>
-            <Talde_Izena>Inter Movistar</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>4</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>204</Id_Klasi>
-            <Denbo_urtea>2025</Denbo_urtea>
-            <Talde_Izena>Osasuna Magna</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>4</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>205</Id_Klasi>
-            <Denbo_urtea>2025</Denbo_urtea>
-            <Talde_Izena>Palma Futsal</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>4</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>206</Id_Klasi>
-            <Denbo_urtea>2025</Denbo_urtea>
-            <Talde_Izena>Ribera Navarra</Talde_Izena>
-            <Puntu_Totalak>8</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>2</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>4</Puntuak_Aurka>
-        </klasifikazioa>
-
-        <klasifikazioa>
-            <Id_Klasi>301</Id_Klasi>
-            <Denbo_urtea>2026</Denbo_urtea>
-            <Talde_Izena>Barca FS</Talde_Izena>
-            <Puntu_Totalak>6</Puntu_Totalak>
-            <Par_Irabaziak>2</Par_Irabaziak>
-            <Par_Galdutakoak>0</Par_Galdutakoak>
-            <Puntuak_Alde>2</Puntuak_Alde>
-            <Puntuak_Aurka>0</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>302</Id_Klasi>
-            <Denbo_urtea>2026</Denbo_urtea>
-            <Talde_Izena>Inter Movistar</Talde_Izena>
-            <Puntu_Totalak>4</Puntu_Totalak>
-            <Par_Irabaziak>1</Par_Irabaziak>
-            <Par_Galdutakoak>0</Par_Galdutakoak>
-            <Puntuak_Alde>1</Puntuak_Alde>
-            <Puntuak_Aurka>0</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>303</Id_Klasi>
-            <Denbo_urtea>2026</Denbo_urtea>
-            <Talde_Izena>ElPozo Murcia</Talde_Izena>
-            <Puntu_Totalak>3</Puntu_Totalak>
-            <Par_Irabaziak>1</Par_Irabaziak>
-            <Par_Galdutakoak>1</Par_Galdutakoak>
-            <Puntuak_Alde>1</Puntuak_Alde>
-            <Puntuak_Aurka>1</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>304</Id_Klasi>
-            <Denbo_urtea>2026</Denbo_urtea>
-            <Talde_Izena>Ribera Navarra</Talde_Izena>
-            <Puntu_Totalak>1</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>1</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>1</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>305</Id_Klasi>
-            <Denbo_urtea>2026</Denbo_urtea>
-            <Talde_Izena>Osasuna Magna</Talde_Izena>
-            <Puntu_Totalak>1</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>1</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>1</Puntuak_Aurka>
-        </klasifikazioa>
-        <klasifikazioa>
-            <Id_Klasi>306</Id_Klasi>
-            <Denbo_urtea>2026</Denbo_urtea>
-            <Talde_Izena>Palma Futsal</Talde_Izena>
-            <Puntu_Totalak>1</Puntu_Totalak>
-            <Par_Irabaziak>0</Par_Irabaziak>
-            <Par_Galdutakoak>1</Par_Galdutakoak>
-            <Puntuak_Alde>0</Puntuak_Alde>
-            <Puntuak_Aurka>1</Puntuak_Aurka>
-        </klasifikazioa>
-    </klasifikazioak>
-
 </fnfs>
