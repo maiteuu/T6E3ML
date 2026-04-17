@@ -6,13 +6,14 @@ if (isset($_POST['urtea'])) {
 }
 
 if (!isset($_SESSION['denboraldia'])) {
-    $_SESSION['denboraldia'] = "2024"; 
+    $_SESSION['denboraldia'] = "2024";
 }
 
 $urtea_hautatuta = $_SESSION['denboraldia'];
 ?>
 <!DOCTYPE html>
 <html lang="eu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +21,18 @@ $urtea_hautatuta = $_SESSION['denboraldia'];
     <link rel="stylesheet" href="estiloa/nireestiloa.css">
     <title>FNFS - Partiduak</title>
 </head>
+
 <body>
     <header>
-        <a href="index.php" class="logo-link">
-            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
-        </a>
+        <div class="header-ezkerra">
+            <a href="index.php" class="logo-link">
+                <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+            </a>
+
+            <span class="denboraldi-etiketa">
+                <?php echo $_SESSION['denboraldia']; ?> Denboraldia
+            </span>
+        </div>
 
         <nav>
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
@@ -48,7 +56,7 @@ $urtea_hautatuta = $_SESSION['denboraldia'];
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
-                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?></span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -60,11 +68,13 @@ $urtea_hautatuta = $_SESSION['denboraldia'];
         </div>
 
         <div class="filtro-kaxa">
-            <form action="partiduak.php" method="POST" class="denboraldia-form">
+            <form action="partiduak.php" method="POST" class="form-urtea">
                 <label for="urtea">Denboraldia aldatu:</label>
                 <select name="urtea" id="urtea" onchange="this.form.submit()">
-                    <option value="2024" <?php if($urtea_hautatuta == "2024") echo "selected"; ?>>2024</option>
-                    <option value="2025" <?php if($urtea_hautatuta == "2025") echo "selected"; ?>>2025</option>
+                    <option value="2024" <?php if ($urtea_hautatuta == "2024")
+                        echo "selected"; ?>>2024</option>
+                    <option value="2025" <?php if ($urtea_hautatuta == "2025")
+                        echo "selected"; ?>>2025</option>
                 </select>
             </form>
         </div>
@@ -115,4 +125,5 @@ $urtea_hautatuta = $_SESSION['denboraldia'];
         </div>
     </footer>
 </body>
+
 </html>

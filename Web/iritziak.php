@@ -18,10 +18,16 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'presidente
 
 <body>
     <header>
-        <a href="index.php" class="logo-link">
-            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
-        </a>
-        
+        <div class="header-ezkerra">
+            <a href="index.php" class="logo-link">
+                <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+            </a>
+
+            <span class="denboraldi-etiketa">
+                <?php echo $_SESSION['denboraldia']; ?> Denboraldia
+            </span>
+        </div>
+
         <nav>
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
                 <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
@@ -44,8 +50,7 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'presidente
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
-                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> 
-                (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?></span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -61,10 +66,10 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'presidente
             $xml = new DOMDocument();
             // Intentamos cargar el XML. El @ evita que salgan warnings si el XML está vacío o mal formado.
             if (@$xml->load($fitxategia)) {
-                
+
                 // Comprobamos si hay al menos una iradokizuna
                 if ($xml->getElementsByTagName('iradokizuna')->length > 0) {
-                    
+
                     // Cargamos el XSL
                     $xsl = new DOMDocument();
                     $xsl->load("xml/iritziak.xsl");
@@ -85,18 +90,21 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'presidente
         }
         ?>
     </main>
-    
+
     <footer>
         <div class="kontaktua">
-            <a href="https://www.google.com/maps/place/P.%C2%BA+de+la+Castellana,+151,+4%C2%BAB,+Tetu%C3%A1n,+28046+Madrid/@40.4608003,-3.6930766,663m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd42291b0928b133:0x9b65449e87642aa0!8m2!3d40.4608003!4d-3.6905017!16s%2Fg%2F11lkzhrg_k?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">P.º de la Castellana, 151, 4ºB</a>
+            <a href="https://www.google.com/maps/place/P.%C2%BA+de+la+Castellana,+151,+4%C2%BAB,+Tetu%C3%A1n,+28046+Madrid/@40.4608003,-3.6930766,663m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd42291b0928b133:0x9b65449e87642aa0!8m2!3d40.4608003!4d-3.6905017!16s%2Fg%2F11lkzhrg_k?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">P.º de la Castellana, 151, 4ºB</a>
             <p>+34 91 350 25 01</p>
             <a href="mailto:fnfs@fnfs.es">fnfs@fnfs.es</a>
         </div>
         <div class="links">
             <a href="https://www.instagram.com/lnfs89" class="icono instagram" target="_blank"></a>
-            <a href="https://www.youtube.com/channel/UCiSSamUOaeCFQS9MXVqhOPw" class="icono youtube" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCiSSamUOaeCFQS9MXVqhOPw" class="icono youtube"
+                target="_blank"></a>
             <a href="https://www.tiktok.com/@lnfs89?lang=es" class="icono tiktok" target="_blank"></a>
         </div>
     </footer>
 </body>
+
 </html>

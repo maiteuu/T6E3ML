@@ -1089,6 +1089,81 @@ footer {
     margin-bottom: 20px;
     text-align: center;
 }
+
+/* ========================================= */
+/* --- NUEVO HEADER DINÁMICO --- */
+/* ========================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--granatea); /* Asegúrate de tener esta variable o usa tu color */
+    color: white;
+}
+
+.header-ezkerra {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoa {
+    height: 60px;
+    width: auto;
+}
+
+.denboraldi-etiketa {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.erabiltzaile-testua {
+    margin-right: 15px;
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* ========================================= */
+/* --- SECCIÓN VÍDEO HIGHLIGHTS --- */
+/* ========================================= */
+
+.bideo-kontenedorea {
+    max-width: 850px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+}
+
+.bideo-kontenedorea video,
+.bideo-kontenedorea iframe {
+    width: 100%;
+    height: 480px;
+    display: block;
+    border: none;
+}
+
+/* Texto de descripción del vídeo */
+.highlights-testua {
+    text-align: center;
+    max-width: 700px;
+    margin: 15px auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
 /* ========================================= */
 /* --- PANTAILA TXIKIETARAKO (Mugikorrak) --- */
 /* ========================================= */

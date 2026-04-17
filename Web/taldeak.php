@@ -1,5 +1,5 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 
 // 1. POST bidez datorren taldearen izena jasotzen dugu
 $talde_izena = isset($_POST['taldea']) ? $_POST['taldea'] : '';
@@ -8,7 +8,7 @@ $talde_izena = isset($_POST['taldea']) ? $_POST['taldea'] : '';
 // Geroago hemen "Talde guztien zerrenda" bat jarri dezakezu nahi baduzu.
 if (empty($talde_izena)) {
     header("Location: sailkapena.php");
-    exit(); 
+    exit();
 }
 ?>
 <!DOCTYPE html>
@@ -24,10 +24,16 @@ if (empty($talde_izena)) {
 
 <body>
     <header>
-        <a href="index.php" class="logo-link">
-            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
-        </a>
-        
+        <div class="header-ezkerra">
+            <a href="index.php" class="logo-link">
+                <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+            </a>
+
+            <span class="denboraldi-etiketa">
+                <?php echo $_SESSION['denboraldia']; ?> Denboraldia
+            </span>
+        </div>
+
         <nav>
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
                 <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
@@ -50,7 +56,7 @@ if (empty($talde_izena)) {
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
-                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?></span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -68,7 +74,7 @@ if (empty($talde_izena)) {
             $xmlOriginal = new DOMDocument();
             $xmlOriginal->load($fitxategia);
             $xpath = new DOMXPath($xmlOriginal);
-            
+
             // Bilatu taldearen informazioa
             $taldeaNode = $xpath->query("//taldeak/taldea[Talde_Izena='$talde_izena']")->item(0);
             // Bilatu talde honetako jokalariak
@@ -126,4 +132,5 @@ if (empty($talde_izena)) {
         </div>
     </footer>
 </body>
+
 </html>

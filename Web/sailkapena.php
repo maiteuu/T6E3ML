@@ -27,8 +27,15 @@ $talde_nodos = $xpath->query("//taldeak/taldea/Talde_Izena");
 foreach ($talde_nodos as $nodo) {
     $izena = trim($nodo->nodeValue);
     $taldeak[$izena] = [
-        'izena' => $izena, 'J' => 0, 'G' => 0, 'E' => 0, 'P' => 0,
-        'GF' => 0, 'GC' => 0, 'DG' => 0, 'PTS' => 0
+        'izena' => $izena,
+        'J' => 0,
+        'G' => 0,
+        'E' => 0,
+        'P' => 0,
+        'GF' => 0,
+        'GC' => 0,
+        'DG' => 0,
+        'PTS' => 0
     ];
 }
 
@@ -38,16 +45,16 @@ $partiduak = $xpath->query("//denboraldia[Urtea='$urtea']/jaurdunaldiak/jaurduna
 foreach ($partiduak as $partidua) {
     $lok = trim($partidua->getElementsByTagName('Talde_Lok')->item(0)->nodeValue);
     $bis = trim($partidua->getElementsByTagName('Talde_Bis')->item(0)->nodeValue);
-    $g_lok = (int)$partidua->getElementsByTagName('Emaitza_Lok')->item(0)->nodeValue;
-    $g_bis = (int)$partidua->getElementsByTagName('Emaitza_Bis')->item(0)->nodeValue;
+    $g_lok = (int) $partidua->getElementsByTagName('Emaitza_Lok')->item(0)->nodeValue;
+    $g_bis = (int) $partidua->getElementsByTagName('Emaitza_Bis')->item(0)->nodeValue;
 
     // Suposatzen dugu emaitza biak 0 badira eta partidu bat jokatu gabe badago... 
     // Baina momentuz XMLko partidu guztiak prozesatuko ditugu.
-    
+
     // Partidu jokatua (+1)
     $taldeak[$lok]['J']++;
     $taldeak[$bis]['J']++;
-    
+
     // Golak
     $taldeak[$lok]['GF'] += $g_lok;
     $taldeak[$lok]['GC'] += $g_bis;
@@ -55,15 +62,31 @@ foreach ($partiduak as $partidua) {
     $taldeak[$bis]['GC'] += $g_lok;
 
     // Emaitzaren araberako puntuak
-    if ($g_lok > $g_bis) { 
-        if (isset($taldeak[$lok])) { $taldeak[$lok]['G']++; $taldeak[$lok]['PTS'] += 3; }
-        if (isset($taldeak[$bis])) { $taldeak[$bis]['P']++; }
-    } elseif ($g_lok < $g_bis) { 
-        if (isset($taldeak[$bis])) { $taldeak[$bis]['G']++; $taldeak[$bis]['PTS'] += 3; }
-        if (isset($taldeak[$lok])) { $taldeak[$lok]['P']++; }
-    } else { 
-        if (isset($taldeak[$lok])) { $taldeak[$lok]['E']++; $taldeak[$lok]['PTS'] += 1; }
-        if (isset($taldeak[$bis])) { $taldeak[$bis]['E']++; $taldeak[$bis]['PTS'] += 1; }
+    if ($g_lok > $g_bis) {
+        if (isset($taldeak[$lok])) {
+            $taldeak[$lok]['G']++;
+            $taldeak[$lok]['PTS'] += 3;
+        }
+        if (isset($taldeak[$bis])) {
+            $taldeak[$bis]['P']++;
+        }
+    } elseif ($g_lok < $g_bis) {
+        if (isset($taldeak[$bis])) {
+            $taldeak[$bis]['G']++;
+            $taldeak[$bis]['PTS'] += 3;
+        }
+        if (isset($taldeak[$lok])) {
+            $taldeak[$lok]['P']++;
+        }
+    } else {
+        if (isset($taldeak[$lok])) {
+            $taldeak[$lok]['E']++;
+            $taldeak[$lok]['PTS'] += 1;
+        }
+        if (isset($taldeak[$bis])) {
+            $taldeak[$bis]['E']++;
+            $taldeak[$bis]['PTS'] += 1;
+        }
     }
 }
 
@@ -73,7 +96,7 @@ foreach ($taldeak as &$taldea) {
 }
 
 // 4. ORDENATU (Lehenengo Puntuak, gero Gol Diferentzia)
-usort($taldeak, function($a, $b) {
+usort($taldeak, function ($a, $b) {
     if ($a['PTS'] == $b['PTS']) {
         return $b['DG'] <=> $a['DG']; // Berdinketa badago, DG handiena lehenengo
     }
@@ -88,7 +111,7 @@ $xmlKalkulatua->appendChild($root);
 foreach ($taldeak as $pos => $t) {
     // Bakarrik erakutsiko ditugu partiduren bat jokatu duten taldeak urte horretan
     // Edo denak erakutsi nahi badituzu, kendu if hau.
-    if ($t['J'] > 0) { 
+    if ($t['J'] > 0) {
         $nodo_taldea = $xmlKalkulatua->createElement('taldea');
         $nodo_taldea->appendChild($xmlKalkulatua->createElement('posizioa', $pos + 1));
         $nodo_taldea->appendChild($xmlKalkulatua->createElement('izena', $t['izena']));
@@ -98,7 +121,7 @@ foreach ($taldeak as $pos => $t) {
         $nodo_taldea->appendChild($xmlKalkulatua->createElement('galduak', $t['P']));
         $nodo_taldea->appendChild($xmlKalkulatua->createElement('alde', $t['GF']));
         $nodo_taldea->appendChild($xmlKalkulatua->createElement('aurka', $t['GC']));
-        $nodo_taldea->appendChild($xmlKalkulatua->createElement('diferentzia', $t['DG'] > 0 ? '+'.$t['DG'] : $t['DG']));
+        $nodo_taldea->appendChild($xmlKalkulatua->createElement('diferentzia', $t['DG'] > 0 ? '+' . $t['DG'] : $t['DG']));
         $nodo_taldea->appendChild($xmlKalkulatua->createElement('puntuak', $t['PTS']));
         $root->appendChild($nodo_taldea);
     }
@@ -106,6 +129,7 @@ foreach ($taldeak as $pos => $t) {
 ?>
 <!DOCTYPE html>
 <html lang="eu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,11 +137,18 @@ foreach ($taldeak as $pos => $t) {
     <link rel="stylesheet" href="estiloa/nireestiloa.css">
     <title>FNFS - Sailkapena</title>
 </head>
+
 <body>
     <header>
-        <a href="index.php" class="logo-link">
-            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
-        </a>
+        <div class="header-ezkerra">
+            <a href="index.php" class="logo-link">
+                <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+            </a>
+
+            <span class="denboraldi-etiketa">
+                <?php echo $_SESSION['denboraldia']; ?> Denboraldia
+            </span>
+        </div>
 
         <nav>
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
@@ -136,13 +167,12 @@ foreach ($taldeak as $pos => $t) {
             <div class="menuBotoia"><a href="sailkapena.php">Sailkapena</a></div>
             <div class="menuBotoia"><a href="partiduak.php">Partiduak</a></div>
         </nav>
-        
+
         <div class="saioa-kontenedorea">
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
-                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?>
-                    (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?></span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -151,7 +181,7 @@ foreach ($taldeak as $pos => $t) {
     <main>
         <div class="sailkapena-container">
             <h1 class="sailkapena-izenburua">SAILKAPENA - <?php echo $urtea; ?> Denboraldia</h1>
-            
+
             <form method="POST" action="sailkapena.php" class="form-urtea">
                 <label for="urtea">Aukeratu denboraldia:</label>
                 <select name="urtea" id="urtea" onchange="this.form.submit()">
@@ -166,11 +196,11 @@ foreach ($taldeak as $pos => $t) {
             <?php
             // XSLT-ri GURE XML BERRIA PASATZEN DIOGU
             $xsl = new DOMDocument();
-            $xsl->load("xml/sailkapena.xsl"); 
+            $xsl->load("xml/sailkapena.xsl");
 
             $proc = new XSLTProcessor();
             $proc->importStyleSheet($xsl);
-            
+
             // Hemen transformToXML funtzioari guk memorian sortutako XML berria pasatzen diogu
             echo $proc->transformToXML($xmlKalkulatua);
             ?>
@@ -192,4 +222,5 @@ foreach ($taldeak as $pos => $t) {
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php
+session_start();
+if (!isset($_SESSION['denboraldia'])) {
+    $_SESSION['denboraldia'] = "2024";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +17,15 @@
 
 <body>
     <header>
-        <a href="index.php" class="logo-link">
-            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
-        </a>
+        <div class="header-ezkerra">
+            <a href="index.php" class="logo-link">
+                <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+            </a>
+
+            <span class="denboraldi-etiketa">
+                <?php echo $_SESSION['denboraldia']; ?> Denboraldia
+            </span>
+        </div>
 
         <nav>
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
@@ -38,8 +49,7 @@
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
-                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?>
-                    (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?></span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -73,9 +83,13 @@
             <article>
                 <h1 class="hasierakoTitulua">Highlights</h1>
                 <div class="hasieraArtikulo">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BKzfnyR_QZ8?si=sf311o9hboDDu8kK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BKzfnyR_QZ8?si=sf311o9hboDDu8kK"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <br>
-                    <p>Pista gainean dena ematen dute taldeek, eta hemen daukazu horren froga. Gozatu asteburuko gol, geldiketa eta izkiratze (regates) ikusgarrienekin. Hau da gure liga, hau da gure pasioa!</p>
+                    <p>Pista gainean dena ematen dute taldeek, eta hemen daukazu horren froga. Gozatu asteburuko gol,
+                        geldiketa eta izkiratze (regates) ikusgarrienekin. Hau da gure liga, hau da gure pasioa!</p>
                 </div>
             </article>
         </section>

@@ -18,17 +18,23 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'administra
 
 <body>
     <header>
-        <a href="index.php" class="logo-link">
-            <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
-        </a>
-        
+        <div class="header-ezkerra">
+            <a href="index.php" class="logo-link">
+                <img src="irudiak/FNFS Logo blanco transparente.png" alt="FNFS Logo" class="logoa">
+            </a>
+
+            <span class="denboraldi-etiketa">
+                <?php echo $_SESSION['denboraldia']; ?> Denboraldia
+            </span>
+        </div>
+
         <nav>
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'presidentea'): ?>
                 <div class="menuBotoia"><a href="iritziak.php">Iritziak</a></div>
             <?php endif; ?>
 
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'entrenatzailea'): ?>
-                <div class="menuBotoia"><a href="kontaktua.php">Iradokizunak</a></div>
+                <div class="menuBotoia"><a href="kontaktua.php">FeedBack</a></div>
             <?php endif; ?>
 
             <?php if (isset($_SESSION["tipoUsuario"]) && $_SESSION["tipoUsuario"] === 'administratzailea'): ?>
@@ -44,7 +50,7 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'administra
             <?php if (!isset($_SESSION["nombreUsuario"])): ?>
                 <a href="login.php" class="hasi-saioa-botoia">Saioa Hasi</a>
             <?php else: ?>
-                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?> (<?php echo $_SESSION["tipoUsuario"]; ?>)</span>
+                <span class="erabiltzaile-testua">Kaixo, <?php echo $_SESSION["nombreUsuario"]; ?></span>
                 <a href="itxi.php" class="hasi-saioa-botoia">Itxi Saioa</a>
             <?php endif; ?>
         </div>
@@ -57,18 +63,18 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'administra
 
         <div class="erabiltzaileak-container">
             <?php
-            $fitxategia = 'xml/users.xml'; 
+            $fitxategia = 'xml/users.xml';
 
             if (file_exists($fitxategia)) {
                 $xml = new DOMDocument();
                 $xml->load($fitxategia);
-                
+
                 $xsl = new DOMDocument();
                 $xsl->load("xml/erabiltzaileak.xsl");
 
                 $proc = new XSLTProcessor();
                 $proc->importStyleSheet($xsl);
-                
+
                 // Transfomazioa inprimatu
                 echo $proc->transformToXML($xml);
             } else {
@@ -93,4 +99,5 @@ if (!isset($_SESSION["tipoUsuario"]) || $_SESSION["tipoUsuario"] !== 'administra
         </div>
     </footer>
 </body>
+
 </html>

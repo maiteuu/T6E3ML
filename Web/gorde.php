@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $dom->save($fitxategia);
 
-    header("Location: kontaktu.php?egoera=ondo");
+    header("Location: kontaktua.php?egoera=ondo");
     exit();
 
 } else {
