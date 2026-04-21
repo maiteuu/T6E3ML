@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnfs>
+    <erabiltzaileak>
+        <erabiltzailea>
+            <erabiltzaile_izena>admin</erabiltzaile_izena>
+            <pasahitza>admin</pasahitza>
+            <erabiltzaile_mota>administratzailea</erabiltzaile_mota>
+        </erabiltzailea>
+        <erabiltzailea>
+            <erabiltzaile_izena>presi</erabiltzaile_izena>
+            <pasahitza>presi</pasahitza>
+            <erabiltzaile_mota>presidentea</erabiltzaile_mota>
+        </erabiltzailea>
+        <erabiltzailea>
+            <erabiltzaile_izena>entrenador_pozo</erabiltzaile_izena>
+            <pasahitza>pozo</pasahitza>
+            <erabiltzaile_mota>entrenatzailea</erabiltzaile_mota>
+        </erabiltzailea>
+        <erabiltzailea>
+            <erabiltzaile_izena>entrenador_palma</erabiltzaile_izena>
+            <pasahitza>palma</pasahitza>
+            <erabiltzaile_mota>entrenatzailea</erabiltzaile_mota>
+        </erabiltzailea>
+    </erabiltzaileak>
+
+    <taldeak>
+        <taldea>
+            <Talde_Izena>Barca FS</Talde_Izena>
+            <Sorrera_Data>1989-01-01</Sorrera_Data>
+            <Lehendakari_Izena>Joan</Lehendakari_Izena>
+            <Lehendakari_NAN>11111111A</Lehendakari_NAN>
+            <N_Bazkideak>4500</N_Bazkideak>
+            <logoa>irudiak/Eskutuak/barca.png</logoa>
+            <deskribapena>Kataluniako talde historikoa. Lehendakaria Joan da, eta 4500 bazkide ditu gaur egun, punta-puntako jokalariak dituelarik.</deskribapena>
+        </taldea>
+        <taldea>
+            <Talde_Izena>ElPozo Murcia</Talde_Izena>
+            <Sorrera_Data>1989-08-24</Sorrera_Data>
+            <Lehendakari_Izena>Jose Ant.</Lehendakari_Izena>
+            <Lehendakari_NAN>22222222B</Lehendakari_NAN>
+            <N_Bazkideak>3200</N_Bazkideak>
+            <logoa>irudiak/Eskutuak/Elpozo.png</logoa>
+            <deskribapena>Murtziako talde ezaguna. Espainiako areto futboleko talde garrantzitsuenetako bat da, tradizio handikoa.</deskribapena>
+        </taldea>
+        <taldea>
+            <Talde_Izena>Inter Movistar</Talde_Izena>
+            <Sorrera_Data>1977-10-15</Sorrera_Data>
+            <Lehendakari_Izena>Jose Mari</Lehendakari_Izena>
+            <Lehendakari_NAN>33333333C</Lehendakari_NAN>
+            <N_Bazkideak>4000</N_Bazkideak>
+            <logoa>irudiak/Eskutuak/inter.png</logoa>
+            <deskribapena>Madrileko taldea, Europako talderik sarituenetako bat historia osoan zehar, 4000 bazkide fidelen laguntzarekin.</deskribapena>
+        </taldea>
+        <taldea>
+            <Talde_Izena>Palma Futsal</Talde_Izena>
+            <Sorrera_Data>1998-05-20</Sorrera_Data>
+            <Lehendakari_Izena>Miquel</Lehendakari_Izena>
+            <Lehendakari_NAN>44444444D</Lehendakari_NAN>
+            <N_Bazkideak>2800</N_Bazkideak>
+            <logoa>irudiak/Eskutuak/palma.png</logoa>
+            <deskribapena>Balear Uharteetako talde indartsua. Azken urteetan maila izugarria erakutsi du txapelketa garrantzitsuenetan.</deskribapena>
+        </taldea>
+        <taldea>
+            <Talde_Izena>Osasuna Magna</Talde_Izena>
+            <Sorrera_Data>1978-01-01</Sorrera_Data>
+            <Lehendakari_Izena>Tatono</Lehendakari_Izena>
+            <Lehendakari_NAN>55555555E</Lehendakari_NAN>
+            <N_Bazkideak>2500</N_Bazkideak>
+            <logoa>irudiak/Eskutuak/osasuna.png</logoa>
+            <deskribapena>Irurtzungo talde nafarra. Nortasun handiko taldea da, beti borrokarako prest eta harrobiarekin lan bikaina egiten duena.</deskribapena>
+        </taldea>
+        <taldea>
+            <Talde_Izena>Ribera Navarra</Talde_Izena>
+            <Sorrera_Data>2001-06-14</Sorrera_Data>
+            <Lehendakari_Izena>Alberto</Lehendakari_Izena>
+            <Lehendakari_NAN>66666666F</Lehendakari_NAN>
+            <N_Bazkideak>1500</N_Bazkideak>
+            <logoa>irudiak/Eskutuak/ribera.png</logoa>
+            <deskribapena>Tuterako taldea. Zale sutsuekin batera, liga osoan zehar partida zailak emateagatik da ezaguna.</deskribapena>
+        </taldea>
+    </taldeak>
+
+    <jokalariak>
+        <jokalaria><NAN>12345678A</NAN><Jok_Izena>Sergio</Jok_Izena><Jok_Abizena>Lozano</Jok_Abizena><Jaio_Data>1988-11-09</Jaio_Data><Merka_Prezioa>500000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>23456789B</NAN><Jok_Izena>Didac</Jok_Izena><Jok_Abizena>Plana</Jok_Abizena><Jaio_Data>1990-05-22</Jaio_Data><Merka_Prezioa>300000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>10000001A</NAN><Jok_Izena>Miquel</Jok_Izena><Jok_Abizena>Feixas</Jok_Abizena><Jaio_Data>1997-09-04</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>10000002B</NAN><Jok_Izena>Antonio</Jok_Izena><Jok_Abizena>Perez</Jok_Abizena><Jaio_Data>2000-10-19</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>10000003C</NAN><Jok_Izena>Andre</Jok_Izena><Jok_Abizena>Coelho</Jok_Abizena><Jaio_Data>1993-10-30</Jaio_Data><Merka_Prezioa>300000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>10000004D</NAN><Jok_Izena>Erick</Jok_Izena><Jok_Abizena>Mendonca</Jok_Abizena><Jaio_Data>1995-07-21</Jaio_Data><Merka_Prezioa>350000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>10000005E</NAN><Jok_Izena>Adolfo</Jok_Izena><Jok_Abizena>Fernandez</Jok_Abizena><Jaio_Data>1993-05-19</Jaio_Data><Merka_Prezioa>400000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>10000006F</NAN><Jok_Izena>Dyego</Jok_Izena><Jok_Abizena>Zuffo</Jok_Abizena><Jaio_Data>1989-08-05</Jaio_Data><Merka_Prezioa>450000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>10000007G</NAN><Jok_Izena>Matheus</Jok_Izena><Jok_Abizena>Rodrigues</Jok_Abizena><Jaio_Data>1996-10-03</Jaio_Data><Merka_Prezioa>380000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>10000008H</NAN><Jok_Izena>Juanjo</Jok_Izena><Jok_Abizena>Catela</Jok_Abizena><Jaio_Data>1995-04-14</Jaio_Data><Merka_Prezioa>320000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>10000009I</NAN><Jok_Izena>Jean Pierre</Jok_Izena><Jok_Abizena>Pito</Jok_Abizena><Jaio_Data>1991-11-06</Jaio_Data><Merka_Prezioa>600000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+        <jokalaria><NAN>10000010J</NAN><Jok_Izena>Carlos V.</Jok_Izena><Jok_Abizena>Ferrao</Jok_Abizena><Jaio_Data>1990-10-29</Jaio_Data><Merka_Prezioa>550000.00</Merka_Prezioa><Talde_Izena>Barca FS</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+
+        <jokalaria><NAN>34567890C</NAN><Jok_Izena>Marcel</Jok_Izena><Jok_Abizena>Marques</Jok_Abizena><Jaio_Data>1996-07-26</Jaio_Data><Merka_Prezioa>450000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>45678901D</NAN><Jok_Izena>Juanjo</Jok_Izena><Jok_Abizena>Angosto</Jok_Abizena><Jaio_Data>1985-08-19</Jaio_Data><Merka_Prezioa>200000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>20000001A</NAN><Jok_Izena>Edu</Jok_Izena><Jok_Abizena>Sousa</Jok_Abizena><Jaio_Data>1996-08-12</Jaio_Data><Merka_Prezioa>180000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>20000002B</NAN><Jok_Izena>Marlon</Jok_Izena><Jok_Abizena>Araujo</Jok_Abizena><Jaio_Data>1987-12-28</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>20000003C</NAN><Jok_Izena>Felipe</Jok_Izena><Jok_Abizena>Valerio</Jok_Abizena><Jaio_Data>1993-07-08</Jaio_Data><Merka_Prezioa>280000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>20000004D</NAN><Jok_Izena>Ricardo</Jok_Izena><Jok_Abizena>Mayor</Jok_Abizena><Jaio_Data>2000-02-21</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>20000005E</NAN><Jok_Izena>Fabricio</Jok_Izena><Jok_Abizena>Gadeia</Jok_Abizena><Jaio_Data>1988-06-14</Jaio_Data><Merka_Prezioa>420000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>20000006F</NAN><Jok_Izena>Artem</Jok_Izena><Jok_Abizena>Niyazov</Jok_Abizena><Jaio_Data>1996-07-30</Jaio_Data><Merka_Prezioa>350000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>20000007G</NAN><Jok_Izena>Taynan</Jok_Izena><Jok_Abizena>Da Silva</Jok_Abizena><Jaio_Data>1993-02-12</Jaio_Data><Merka_Prezioa>400000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>20000008H</NAN><Jok_Izena>David</Jok_Izena><Jok_Abizena>Alvarez</Jok_Abizena><Jaio_Data>1997-11-03</Jaio_Data><Merka_Prezioa>200000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>20000009I</NAN><Jok_Izena>Rafa</Jok_Izena><Jok_Abizena>Santos</Jok_Abizena><Jaio_Data>1990-09-25</Jaio_Data><Merka_Prezioa>380000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+        <jokalaria><NAN>20000010J</NAN><Jok_Izena>Bruno</Jok_Izena><Jok_Abizena>Taffy</Jok_Abizena><Jaio_Data>1990-03-30</Jaio_Data><Merka_Prezioa>300000.00</Merka_Prezioa><Talde_Izena>ElPozo Murcia</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+
+        <jokalaria><NAN>56789012E</NAN><Jok_Izena>Jesus</Jok_Izena><Jok_Abizena>Herrero</Jok_Abizena><Jaio_Data>1986-11-04</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>67890123F</NAN><Jok_Izena>Raul</Jok_Izena><Jok_Abizena>Gomez</Jok_Abizena><Jaio_Data>1995-10-25</Jaio_Data><Merka_Prezioa>400000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+        <jokalaria><NAN>30000001A</NAN><Jok_Izena>Jesus</Jok_Izena><Jok_Abizena>Garcia</Jok_Abizena><Jaio_Data>2000-12-05</Jaio_Data><Merka_Prezioa>120000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>30000002B</NAN><Jok_Izena>Jose</Jok_Izena><Jok_Abizena>Raya</Jok_Abizena><Jaio_Data>1997-05-08</Jaio_Data><Merka_Prezioa>220000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>30000003C</NAN><Jok_Izena>Tomaz</Jok_Izena><Jok_Abizena>Braga</Jok_Abizena><Jaio_Data>1990-09-13</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>30000004D</NAN><Jok_Izena>Sepe</Jok_Izena><Jok_Abizena>Gomez</Jok_Abizena><Jaio_Data>1991-01-22</Jaio_Data><Merka_Prezioa>180000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>30000005E</NAN><Jok_Izena>Cecilio</Jok_Izena><Jok_Abizena>Morales</Jok_Abizena><Jaio_Data>1992-07-06</Jaio_Data><Merka_Prezioa>320000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>30000006F</NAN><Jok_Izena>Rubi</Jok_Izena><Jok_Abizena>Lemos</Jok_Abizena><Jaio_Data>1993-08-13</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>30000007G</NAN><Jok_Izena>Tomas</Jok_Izena><Jok_Abizena>Drahovsky</Jok_Abizena><Jaio_Data>1992-10-07</Jaio_Data><Merka_Prezioa>450000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>30000008H</NAN><Jok_Izena>Jovan</Jok_Izena><Jok_Abizena>Lazarevic</Jok_Abizena><Jaio_Data>1997-09-11</Jaio_Data><Merka_Prezioa>280000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>30000009I</NAN><Jok_Izena>Kaito</Jok_Izena><Jok_Abizena>Yamada</Jok_Abizena><Jaio_Data>2000-03-30</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>30000010J</NAN><Jok_Izena>Rafael</Jok_Izena><Jok_Abizena>Fits</Jok_Abizena><Jaio_Data>1992-05-23</Jaio_Data><Merka_Prezioa>380000.00</Merka_Prezioa><Talde_Izena>Inter Movistar</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+
+        <jokalaria><NAN>78901234G</NAN><Jok_Izena>Mario</Jok_Izena><Jok_Abizena>Rivillos</Jok_Abizena><Jaio_Data>1989-12-13</Jaio_Data><Merka_Prezioa>350000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>89012345H</NAN><Jok_Izena>Carlos</Jok_Izena><Jok_Abizena>Barron</Jok_Abizena><Jaio_Data>1987-10-01</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>40000001A</NAN><Jok_Izena>Luan</Jok_Izena><Jok_Abizena>Muller</Jok_Abizena><Jaio_Data>1993-03-17</Jaio_Data><Merka_Prezioa>280000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>40000002B</NAN><Jok_Izena>Rómulo</Jok_Izena><Jok_Abizena>Alves</Jok_Abizena><Jaio_Data>1986-09-28</Jaio_Data><Merka_Prezioa>180000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>40000003C</NAN><Jok_Izena>Vilian</Jok_Izena><Jok_Abizena>Lourenco</Jok_Abizena><Jaio_Data>1989-08-04</Jaio_Data><Merka_Prezioa>200000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>40000004D</NAN><Jok_Izena>Marcelo</Jok_Izena><Jok_Abizena>Chaguinha</Jok_Abizena><Jaio_Data>1988-07-25</Jaio_Data><Merka_Prezioa>300000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>40000005E</NAN><Jok_Izena>Moslem</Jok_Izena><Jok_Abizena>Oladghobad</Jok_Abizena><Jaio_Data>1995-11-22</Jaio_Data><Merka_Prezioa>400000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>40000006F</NAN><Jok_Izena>Cleber</Jok_Izena><Jok_Abizena>Souza</Jok_Abizena><Jaio_Data>1997-01-06</Jaio_Data><Merka_Prezioa>420000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>40000007G</NAN><Jok_Izena>Salar</Jok_Izena><Jok_Abizena>Aghapour</Jok_Abizena><Jaio_Data>2000-03-07</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>40000008H</NAN><Jok_Izena>Fabinho</Jok_Izena><Jok_Abizena>Gomes</Jok_Abizena><Jaio_Data>2001-11-26</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>40000009I</NAN><Jok_Izena>Hossein</Jok_Izena><Jok_Abizena>Tayebi</Jok_Abizena><Jaio_Data>1988-09-29</Jaio_Data><Merka_Prezioa>450000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+        <jokalaria><NAN>40000010J</NAN><Jok_Izena>Bruno</Jok_Izena><Jok_Abizena>Gomes</Jok_Abizena><Jaio_Data>1996-05-15</Jaio_Data><Merka_Prezioa>350000.00</Merka_Prezioa><Talde_Izena>Palma Futsal</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+
+        <jokalaria><NAN>90123456I</NAN><Jok_Izena>Roberto</Jok_Izena><Jok_Abizena>Martil</Jok_Abizena><Jaio_Data>1987-03-15</Jaio_Data><Merka_Prezioa>180000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>01234567J</NAN><Jok_Izena>Asier</Jok_Izena><Jok_Abizena>Llamas</Jok_Abizena><Jaio_Data>1990-11-02</Jaio_Data><Merka_Prezioa>200000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>50000001A</NAN><Jok_Izena>Alejandro</Jok_Izena><Jok_Abizena>Palazon</Jok_Abizena><Jaio_Data>1998-02-14</Jaio_Data><Merka_Prezioa>100000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>50000002B</NAN><Jok_Izena>Jhonatan</Jok_Izena><Jok_Abizena>Linhares</Jok_Abizena><Jaio_Data>1993-04-12</Jaio_Data><Merka_Prezioa>160000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>50000003C</NAN><Jok_Izena>Igor</Jok_Izena><Jok_Abizena>Korsun</Jok_Abizena><Jaio_Data>1995-09-08</Jaio_Data><Merka_Prezioa>190000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>50000004D</NAN><Jok_Izena>Toni</Jok_Izena><Jok_Abizena>Escribano</Jok_Abizena><Jaio_Data>2002-06-25</Jaio_Data><Merka_Prezioa>90000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>50000005E</NAN><Jok_Izena>Dani</Jok_Izena><Jok_Abizena>Zurdo</Jok_Abizena><Jaio_Data>2000-08-11</Jaio_Data><Merka_Prezioa>140000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>50000006F</NAN><Jok_Izena>Andres</Jok_Izena><Jok_Abizena>Geraghty</Jok_Abizena><Jaio_Data>1998-01-22</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>50000007G</NAN><Jok_Izena>Juninho</Jok_Izena><Jok_Abizena>Silva</Jok_Abizena><Jaio_Data>1997-03-16</Jaio_Data><Merka_Prezioa>180000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>50000008H</NAN><Jok_Izena>Carlos</Jok_Izena><Jok_Abizena>Vallejo</Jok_Abizena><Jaio_Data>2001-09-05</Jaio_Data><Merka_Prezioa>110000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>50000009I</NAN><Jok_Izena>Leo</Jok_Izena><Jok_Abizena>Cafe</Jok_Abizena><Jaio_Data>1999-12-01</Jaio_Data><Merka_Prezioa>220000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+        <jokalaria><NAN>50000010J</NAN><Jok_Izena>Dani</Jok_Izena><Jok_Abizena>Saldise</Jok_Abizena><Jaio_Data>1995-07-08</Jaio_Data><Merka_Prezioa>300000.00</Merka_Prezioa><Talde_Izena>Osasuna Magna</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+
+        <jokalaria><NAN>11223344K</NAN><Jok_Izena>Terry</Jok_Izena><Jok_Abizena>Prestes</Jok_Abizena><Jaio_Data>1995-02-14</Jaio_Data><Merka_Prezioa>320000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+        <jokalaria><NAN>22334455L</NAN><Jok_Izena>Adrian</Jok_Izena><Jok_Abizena>Pereira</Jok_Abizena><Jaio_Data>1998-04-10</Jaio_Data><Merka_Prezioa>120000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>60000001A</NAN><Jok_Izena>Raul</Jok_Izena><Jok_Abizena>Jimenez</Jok_Abizena><Jaio_Data>2001-03-22</Jaio_Data><Merka_Prezioa>80000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Atezaina</Posizioa></jokalaria>
+        <jokalaria><NAN>60000002B</NAN><Jok_Izena>David</Jok_Izena><Jok_Abizena>Garcia</Jok_Abizena><Jaio_Data>1989-10-14</Jaio_Data><Merka_Prezioa>150000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>60000003C</NAN><Jok_Izena>Dani</Jok_Izena><Jok_Abizena>Fernandez</Jok_Abizena><Jaio_Data>2000-01-09</Jaio_Data><Merka_Prezioa>110000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>60000004D</NAN><Jok_Izena>Pedro</Jok_Izena><Jok_Abizena>Espin</Jok_Abizena><Jaio_Data>2002-05-30</Jaio_Data><Merka_Prezioa>70000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Atzelaria</Posizioa></jokalaria>
+        <jokalaria><NAN>60000005E</NAN><Jok_Izena>Carlos</Jok_Izena><Jok_Abizena>Bartolome</Jok_Abizena><Jaio_Data>1999-07-18</Jaio_Data><Merka_Prezioa>140000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>60000006F</NAN><Jok_Izena>Anas</Jok_Izena><Jok_Abizena>El Ayyane</Jok_Abizena><Jaio_Data>1992-10-30</Jaio_Data><Merka_Prezioa>200000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>60000007G</NAN><Jok_Izena>Nacho</Jok_Izena><Jok_Abizena>Gomez</Jok_Abizena><Jaio_Data>1998-12-12</Jaio_Data><Merka_Prezioa>130000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>60000008H</NAN><Jok_Izena>Lucas</Jok_Izena><Jok_Abizena>Tripodi</Jok_Abizena><Jaio_Data>1994-06-18</Jaio_Data><Merka_Prezioa>250000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>60000009I</NAN><Jok_Izena>Uge</Jok_Izena><Jok_Abizena>Hernandez</Jok_Abizena><Jaio_Data>1996-04-03</Jaio_Data><Merka_Prezioa>180000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Hegala</Posizioa></jokalaria>
+        <jokalaria><NAN>60000010J</NAN><Jok_Izena>Gabriel</Jok_Izena><Jok_Abizena>Vasquez</Jok_Abizena><Jaio_Data>1997-08-25</Jaio_Data><Merka_Prezioa>210000.00</Merka_Prezioa><Talde_Izena>Ribera Navarra</Talde_Izena><Posizioa>Pibota</Posizioa></jokalaria>
+    </jokalariak>
+
+    <denboraldiak>
+        <denboraldia>
+            <Urtea>2024</Urtea>
+            <jaurdunaldiak>
+                <jaurdunaldia zenbakia="1">
+                    <partiduak>
+                        <partidua><Id_Par>101</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>102</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>103</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="2">
+                    <partiduak>
+                        <partidua><Id_Par>104</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>105</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>106</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>4</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="3">
+                    <partiduak>
+                        <partidua><Id_Par>107</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>108</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>5</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>109</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="4">
+                    <partiduak>
+                        <partidua><Id_Par>110</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>111</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>6</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>112</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="5">
+                    <partiduak>
+                        <partidua><Id_Par>113</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>114</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>115</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="6">
+                    <partiduak>
+                        <partidua><Id_Par>116</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>5</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>117</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>118</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="7">
+                    <partiduak>
+                        <partidua><Id_Par>119</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>120</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>121</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="8">
+                    <partiduak>
+                        <partidua><Id_Par>122</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>4</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>123</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>7</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>124</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="9">
+                    <partiduak>
+                        <partidua><Id_Par>125</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>126</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>1</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>127</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>3</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="10">
+                    <partiduak>
+                        <partidua><Id_Par>128</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>4</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>129</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>3</Emaitza_Lok><Emaitza_Bis>1</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>130</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>5</Emaitza_Lok><Emaitza_Bis>4</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+            </jaurdunaldiak>
+        </denboraldia>
+
+        <denboraldia>
+            <Urtea>2025</Urtea>
+            <jaurdunaldiak>
+                <jaurdunaldia zenbakia="1">
+                    <partiduak>
+                        <partidua><Id_Par>201</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>202</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>203</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="2">
+                    <partiduak>
+                        <partidua><Id_Par>204</Id_Par><Talde_Lok>Ribera Navarra</Talde_Lok><Talde_Bis>Palma Futsal</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>205</Id_Par><Talde_Lok>Osasuna Magna</Talde_Lok><Talde_Bis>Inter Movistar</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>206</Id_Par><Talde_Lok>Barca FS</Talde_Lok><Talde_Bis>ElPozo Murcia</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>2</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+                <jaurdunaldia zenbakia="3">
+                    <partiduak>
+                        <partidua><Id_Par>207</Id_Par><Talde_Lok>ElPozo Murcia</Talde_Lok><Talde_Bis>Ribera Navarra</Talde_Bis><Emaitza_Lok>2</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>208</Id_Par><Talde_Lok>Inter Movistar</Talde_Lok><Talde_Bis>Barca FS</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                        <partidua><Id_Par>209</Id_Par><Talde_Lok>Palma Futsal</Talde_Lok><Talde_Bis>Osasuna Magna</Talde_Bis><Emaitza_Lok>0</Emaitza_Lok><Emaitza_Bis>0</Emaitza_Bis></partidua>
+                    </partiduak>
+                </jaurdunaldia>
+            </jaurdunaldiak>
+        </denboraldia>
+    </denboraldiak>
+</fnfs>

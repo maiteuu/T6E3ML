@@ -1,0 +1,1246 @@
+/* ========================================= */
+/* --- ALDAGAI ETA OINARRIZKO KOLOREAK --- */
+/* ========================================= */
+:root {
+    --granatea: #871521;
+    --hondoa: #f9f4f1;
+    --arrosa-argia: #fce4e6; 
+    --txuria: #ffffff;
+    --pill-erradioa: 50px;
+    --edukiontzi-erradioa: 30px;
+}
+
+/* Dena garbitu hasteko */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gorputzaren itxura orokorra */
+body {
+    background-color: var(--hondoa);
+    color: var(--granatea);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Irudiak ez irteteko bere tokitik */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========================================= */
+/* --- GOIBURUA (Header) --- */
+/* ========================================= */
+header {
+    background-color: var(--granatea);
+    padding: 20px 40px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.logo-link {
+    flex: 0 0 auto;
+}
+
+.logoa {
+    width: 100%;
+    max-width: 140px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+    flex: 1; 
+}
+
+.menuBotoia a {
+    text-decoration: none;
+    color: var(--txuria);
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: var(--pill-erradioa);
+}
+
+.menuBotoia a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Saioa Hasi / Itxi Saioa kontenedorea */
+.saioa-kontenedorea {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 8px;               
+}
+
+.hasi-saioa-botoia {
+    background-color: var(--txuria);
+    color: var(--granatea);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px 25px;
+    border-radius: var(--pill-erradioa);
+    border: 2px solid var(--txuria);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.hasi-saioa-botoia:hover {
+    background-color: var(--granatea);
+    color: var(--txuria);
+}
+
+.saioa-kontenedorea p,
+.saioa-kontenedorea span,
+.erabiltzaile-testua {
+    color: var(--txuria); 
+    margin-right: 0;      
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0; 
+}
+
+/* ========================================= */
+/* --- ORRI NAGUSIA (Index) --- */
+/* ========================================= */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hasierakoTitulua {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--granatea);
+    margin-top: 25px;
+}
+
+.hasieraArtikulo {
+    background-color: var(--txuria); 
+    border: 2px solid var(--arrosa-argia);
+    border-radius: var(--edukiontzi-erradioa);
+    padding: clamp(20px, 5vw, 40px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    
+}
+
+.hasieraArtikulo img {
+    width: 100%;
+    max-width: 250px;
+    float: left; 
+    margin-right: 30px; 
+    margin-bottom: 15px; 
+}
+
+.hasieraArtikulo p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: justify; 
+    color: black;
+}
+
+.hasieraArtikulo iframe {
+    width: 100%;
+    height: 450px; 
+    display: block; 
+    border: 2px solid #871521;
+    border-radius: 25px;
+    margin: bottom 5px;;
+}
+
+/* ========================================= */
+/* --- OINA (Footer) --- */
+/* ========================================= */
+footer {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+}
+
+.kontaktua {
+    text-align: center;
+}
+
+.kontaktua a, .kontaktua p {
+    color: var(--txuria);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.instagram { background-image: url('../irudiak/InstaCrema.png'); }
+.youtube { background-image: url('../irudiak/YoutubeCrema.png'); }
+.tiktok { background-image: url('../irudiak/TikTokCrema.png'); }
+
+.icono:hover {
+    transform: scale(1.15); 
+}
+
+/* ========================================= */
+/* --- SAIOA HASTEKO ORRIA (Login.php) --- */
+/* ========================================= */
+.login-body {
+    background-color: var(--txuria); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-logo-link {
+    margin-bottom: 40px;
+}
+
+.logoa-login {
+    width: 100%;
+    max-width: 250px;
+}
+
+.login-txartela {
+    background-color: var(--txuria);
+    border: 6px solid var(--granatea);
+    border-radius: 40px; 
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.login-ikonoa {
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--granatea);
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.error-mezua {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-taldea {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-taldea label {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 8px;
+    padding-left: 15px; 
+}
+
+.input-taldea input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 3px solid #e0e0e0;
+    border-radius: var(--pill-erradioa);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-taldea input:focus {
+    border-color: var(--granatea);
+}
+
+.botoi-ekintzak {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.sartu-botoia {
+    background-color: #ff3b3b; 
+    color: var(--txuria);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 40px;
+    border: none;
+    border-radius: var(--pill-erradioa);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    flex: 1; 
+    min-width: 120px;
+}
+
+.sartu-botoia:hover {
+    background-color: var(--granatea);
+    transform: scale(1.05); 
+}
+
+.bueltatu-botoia {
+    background-color: #e0e0e0; 
+    color: #333333; 
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: 2px solid #e0e0e0; 
+    border-radius: var(--pill-erradioa);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    text-align: center;
+    flex: 1; 
+}
+
+.bueltatu-botoia:hover {
+    background-color: #cccccc; 
+    transform: scale(1.05);
+}
+
+/* ========================================= */
+/* --- IRADOKIZUNAK ORRIA (Kontaktu.php) --- */
+/* ========================================= */
+.iradokizun-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario-txartela {
+    background-color: var(--txuria);
+    border: 8px solid var(--granatea);
+    border-radius: 40px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1000px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.iradokizun-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-gaia-taldea {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.iradokizun-input {
+    width: 100%;
+    padding: 15px 25px;
+    border: 5px solid #e5e5e5;
+    border-radius: var(--pill-erradioa);
+    font-size: 1rem;
+    outline: none;
+}
+
+.iradokizun-input:focus {
+    border-color: var(--granatea);
+}
+
+.testu-eremua {
+    width: 100%;
+    padding: 25px;
+    border: 5px solid #e5e5e5;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    resize: vertical;
+    min-height: 200px;
+}
+
+.testu-eremua:focus {
+    border-color: var(--granatea);
+}
+
+.input-grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 40px; 
+}
+
+.input-taldea-iradokizun {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.etiketa-beltza {
+    background-color: black;
+    color: white;
+    padding: 8px 35px;
+    border-radius: var(--pill-erradioa);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.mezu-berdea {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 2px solid #c3e6cb;
+}
+
+/* ========================================= */
+/* --- TALDEAK ORRIA (Taldeak.php) --- */
+/* ========================================= */
+.taldeak-main-orria {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulu-kaxa-zentratua {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulu-gorri-pilula {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 10px 40px;
+    border-radius: var(--pill-erradioa);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.taldeen-zerrenda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.talde-blokea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 30px;
+}
+
+.talde-blokea:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.talde-goiko-aldea {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.talde-logo-kaxa {
+    flex: 0 0 150px; 
+}
+
+.ezkutu-formularioa {
+    margin: 0;
+    padding: 0;
+}
+
+.ezkutu-botoia {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+
+.talde-ezkutu-klikagarria {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.talde-ezkutu-klikagarria:hover {
+    transform: scale(1.1);
+}
+
+.talde-informazioa {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.talde-izen-grisa {
+    background-color: #e5e5e5;
+    color: var(--granatea);
+    padding: 8px 30px;
+    border-radius: var(--pill-erradioa);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.talde-testua {
+    color: black;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* ========================================= */
+/* --- SAILKAPENA ORRIA (Sailkapena.php) --- */
+/* ========================================= */
+.sailkapena-main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sailkapen-kaxa {
+    width: 100%;
+    overflow-x: auto; 
+    background-color: var(--txuria);
+    border: 5px solid var(--granatea);
+    border-radius: var(--edukiontzi-erradioa);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.sailkapen-taula {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.sailkapen-taula th {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.sailkapen-taula th:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.sailkapen-taula th:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sailkapen-taula td {
+    padding: 15px 10px;
+    border-bottom: 2px solid #eee;
+    color: #333;
+}
+
+.sailkapen-taula tr:last-child td {
+    border-bottom: none;
+}
+
+.sailkapen-taula tbody tr:nth-child(even) {
+    background-color: var(--arrosa-argia);
+}
+
+.sailkapen-taula tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.tabla-link-botoia {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: var(--granatea); /* Lo ponemos de color granate directamente */
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold; 
+    cursor: pointer;
+    outline: none; /* Muy importante: quita el recuadro azul que ponen algunos navegadores al hacer clic */
+    text-decoration: none; /* Nos aseguramos de que no haya subrayado nunca */
+    transition: opacity 0.2s ease; /* En vez de cambiar el color, haremos un efecto más suave */
+}
+
+.tabla-link-botoia:hover {
+    opacity: 0.7; /* Se vuelve un pelín más transparente al pasar el cursor, dando la sensación de que es clicable sin exagerar */
+}
+
+/* ========================================= */
+/* --- JOKALARIAK ORRIA (Txartel formatua) --- */
+/* ========================================= */
+.jokalariak-main-orria {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jokalari-sarea {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.jokalari-txartela {
+    background-color: var(--txuria);
+    border: 3px solid #e5e5e5;
+    border-radius: var(--edukiontzi-erradioa);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.jokalari-txartela:hover {
+    transform: scale(1.03);
+    border-color: var(--granatea);
+}
+
+.txartel-argazki-kaxa {
+    flex: 0 0 auto;
+}
+
+.txartel-argazkia {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--granatea);
+}
+
+.txartel-informazioa {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.jokalari-izena {
+    color: var(--granatea);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--arrosa-argia);
+    padding-bottom: 5px;
+}
+
+.jokalari-datua {
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.itzuli-kaxa {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ========================================= */
+/* --- IRITZIAK ORRIA (Iritziak.php) --- */
+/* ========================================= */
+.iritziak-main-orria {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iritziak-sarea {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px; 
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.iritzi-txartela {
+    background-color: var(--txuria);
+    border: 3px solid var(--arrosa-argia);
+    border-radius: var(--edukiontzi-erradioa);
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.iritzi-txartela:hover {
+    transform: translateY(-5px);
+    border-color: var(--granatea);
+}
+
+.iritzi-goiburua {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.iritzi-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--granatea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--txuria);
+}
+
+.avatar-irudia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.iritzi-datuak h3 {
+    color: var(--granatea);
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}
+
+.iritzi-gaia {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.iritzi-data {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.iritzi-hutsik {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.iritzi-errorea {
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+
+.iritzi-gorputza p {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.6;
+    font-style: italic;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+/* ========================================= */
+/* --- TAULAK ETA KLASE KOMUNAK (Orokorra)- */
+/* ========================================= */
+
+.ezkerrera {
+    text-align: left !important;
+}
+
+.talde-izena-taula {
+    font-weight: bold;
+    color: var(--granatea);
+}
+
+.puntu-nabarmenak {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: var(--granatea);
+}
+
+/* ========================================= */
+/* --- SAILKAPENA (Clasificación) --- */
+/* ========================================= */
+.sailkapena-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: var(--txuria);
+    padding: 30px;
+    border-radius: var(--edukiontzi-erradioa);
+    box-shadow: 0 4px 12px rgba(135, 21, 33, 0.1);
+}
+
+.sailkapena-izenburua {
+    text-align: center;
+    color: var(--granatea);
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.form-urtea {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.form-urtea label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--granatea);
+}
+
+.form-urtea select {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: var(--pill-erradioa);
+    border: 2px solid var(--granatea);
+    color: var(--granatea);
+    background-color: var(--txuria);
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    transition: background-color 0.3s;
+}
+
+.form-urtea select:hover {
+    background-color: var(--arrosa-argia);
+}
+
+.tabla-sailkapena {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: var(--granatea);
+}
+
+.tabla-sailkapena th {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    padding: 15px 10px;
+    font-weight: bold;
+}
+
+/* Bordes redondeados para la cabecera de la tabla */
+.tabla-sailkapena th:first-child {
+    border-top-left-radius: 10px;
+}
+.tabla-sailkapena th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.tabla-sailkapena td {
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--arrosa-argia);
+}
+
+.tabla-sailkapena tr:nth-child(even) {
+    background-color: var(--hondoa);
+}
+
+.tabla-sailkapena tr:hover {
+    background-color: var(--arrosa-argia);
+}
+
+.col-equipo {
+    text-align: left;
+    font-weight: bold;
+}
+
+.puntos-destacados {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* ========================================= */
+/* --- ERABILTZAILEAK (Usuarios) ORRIA --- */
+/* ========================================= */
+
+.erabiltzaileak-container {
+    max-width: 800px; /* Un poco más estrecho porque solo hay 2 columnas */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.erabiltzaile-taula {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--txuria);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.erabiltzaile-taula th {
+    background-color: var(--granatea);
+    color: var(--txuria);
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.erabiltzaile-taula td {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+.erabiltzaile-taula tr:last-child td {
+    border-bottom: none;
+}
+
+.erabiltzaile-taula tr:hover {
+    background-color: #f9f9f9;
+}
+
+.erabiltzaile-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-txikia {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+/* --- PILULAK (Roles) --- */
+.rol-pilula {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: capitalize; /* Pone la primera letra en mayúscula automáticamente */
+}
+
+/* Colores según el tipo exacto de tu XML */
+.rol-pilula.administratzailea {
+    background-color: #ffcccc; /* Fondo rojizo suave */
+    color: #cc0000; /* Texto rojo oscuro */
+}
+
+.rol-pilula.presidentea {
+    background-color: #e2d9f3; /* Fondo morado suave */
+    color: #5a32a8; /* Texto morado oscuro */
+}
+
+.rol-pilula.entrenatzailea {
+    background-color: #cce5ff; /* Fondo azul suave */
+    color: #004085; /* Texto azul oscuro */
+}
+
+/* ========================================= */
+/* --- PANTAILA TXIKIETARAKO (Mugikorrak) --- */
+/* ========================================= */
+
+.jaurdunaldia-blokea {
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.jaurdunaldia-izenburua {
+    color: var(--granatea);
+    border-bottom: 2px solid var(--granatea);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.partiduak-taula {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.partiduak-taula th {
+    color: #888;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.partiduak-taula td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.talde-izena {
+    width: 40%;
+    font-weight: bold;
+}
+
+.markagailua {
+    width: 20%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.gola {
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.banatzailea {
+    color: var(--granatea);
+}
+
+.filtro-kaxa {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ========================================= */
+/* --- NUEVO HEADER DINÁMICO --- */
+/* ========================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--granatea); /* Asegúrate de tener esta variable o usa tu color */
+    color: white;
+}
+
+.header-ezkerra {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoa {
+    height: 60px;
+    width: auto;
+}
+
+.denboraldi-etiketa {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.erabiltzaile-testua {
+    margin-right: 15px;
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* ========================================= */
+/* --- SECCIÓN VÍDEO HIGHLIGHTS --- */
+/* ========================================= */
+
+.bideo-kontenedorea {
+    max-width: 850px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+}
+
+.bideo-kontenedorea video,
+.bideo-kontenedorea iframe {
+    width: 100%;
+    height: 480px;
+    display: block;
+    border: none;
+}
+
+/* Texto de descripción del vídeo */
+.highlights-testua {
+    text-align: center;
+    max-width: 700px;
+    margin: 15px auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* ========================================= */
+/* --- PANTAILA TXIKIETARAKO (Mugikorrak) --- */
+/* ========================================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+    
+    .saioa-kontenedorea {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .saioa-kontenedorea p,
+    .saioa-kontenedorea span,
+    .erabiltzaile-testua {
+        text-align: center;
+    }
+
+    .hasieraArtikulo img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto; 
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .formulario-txartela {
+        padding: 30px 20px;
+        border-width: 5px;
+    }
+
+    .input-grid-2x2 {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+    }
+    
+    .jokalari-txartela {
+        flex-direction: column;
+        text-align: center;
+    }
+    .jokalari-izena {
+        border-bottom: none;
+        border-top: 2px solid var(--arrosa-argia);
+        padding-top: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .talde-goiko-aldea {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .talde-informazioa {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-txartela {
+        padding: 25px 20px;
+        border-width: 4px;
+    }
+
+    .botoi-ekintzak {
+        flex-direction: column; 
+    }
+
+    .bueltatu-botoia, .sartu-botoia {
+        width: 100%; 
+    }
+}
